@@ -56,55 +56,27 @@ npm start -- TU_API_KEY "Tu mensaje aquí"
 - Reemplaza `TU_API_KEY` por el key generado desde GitHub Models.
 - Reemplaza `"Tu mensaje aquí"` por la frase que deseas analizar.
 
+
+
 ### Instrucciones de implementación del ejercicio
 
-1. Crea un archivo llamado `index.js`.
-2. Instala los paquetes necesarios: `@azure-rest/ai-inference` y `@azure/core-auth`.
-3. En `index.js`, implementa la lógica para recibir el API KEY y el mensaje desde la línea de comandos.
-4. Valida que ambos argumentos sean proporcionados y muestra los mensajes de error correspondientes según los criterios funcionales.
-5. Realiza la petición al modelo "openai/gpt-4.1" usando la API de GitHub Models.
-6. Procesa la respuesta y muestra el sentimiento detectado según corresponda.
-7. Maneja posibles errores, mostrando los mensajes indicados en los criterios funcionales.
-
-   - Si no se proporciona el API KEY:
-     - `Error: No se ha detectado un API Key de conexión a GitHub Models.` (Ver caso de prueba: API Key no proporcionada)
-   - Si no se proporciona el mensaje:
-     - `Error: No se ha detectado un mensaje para procesar.` (Ver caso de prueba: mensaje no proporcionado)
-   - Si el API KEY es inválido:
-     - `Error: No es posible consumir los servicios de GitHub Models con el KEY suministrado.` (Ver caso de prueba: API Key inválida)
-   - Si la petición es exitosa:
-     - `Sentimiento detectado: <positivo|negativo|neutral>` (Ver casos de prueba de éxito)
-   - Si ocurre cualquier otro error:
-     - `Error: Detalle del error`
-
-# Casos de Prueba
-
-| Comando de prueba                                                                                      | Resultado esperado                                                        |
-|-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| npm start -- TU_API_KEY "Este producto es increíble, me encantó"                                      | Sentimiento detectado: positivo                                           |
-| npm start -- TU_API_KEY "Excelente calidad y servicio, lo recomiendo"                                 | Sentimiento detectado: positivo                                           |
-| npm start -- TU_API_KEY "Muy satisfecho con la atención recibida"                                     | Sentimiento detectado: positivo                                           |
-| npm start -- TU_API_KEY "No me gustó para nada, fue una pérdida de dinero"                            | Sentimiento detectado: negativo                                           |
-| npm start -- TU_API_KEY "La aplicación se cierra constantemente, es frustrante"                       | Sentimiento detectado: negativo                                           |
-| npm start -- TU_API_KEY "El servicio fue lento y no resolvieron mi problema"                          | Sentimiento detectado: negativo                                           |
-| npm start -- TU_API_KEY "El informe fue entregado según lo solicitado"                                | Sentimiento detectado: neutral                                            |
-| npm start -- TU_API_KEY "Está bien, pero no me impresionó"                                            | Sentimiento detectado: neutral                                            |
-| npm start -- TU_API_KEY "El producto cumple con lo que se describe en la página"                      | Sentimiento detectado: neutral                                            |
-| npm start --                                                                                          | Error: No se ha detectado un API Key de conexión a GitHub Models.         |
-| npm start -- TU_API_KEY                                                                              | Error: No se ha detectado un mensaje para procesar.                       |
-| npm start -- INVALID_KEY "Este producto es increíble, me encantó"                                     | Error: No es posible consumir los servicios de GitHub Models con el KEY suministrado. |
+1. Clona la carpeta correspondiente a challenge_2 desde el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/tree/main
+2. Crea un archivo llamado `index.js` en la raíz del proyecto .
+3. Instala los paquetes necesarios: `@azure-rest/ai-inference` y `@azure/core-auth` (se instalan con el comando: `npm install @azure-rest/ai-inference @azure/core-auth`).
+4. Implementa la lógica para recibir el API KEY y el mensaje desde la línea de comandos.
+5. Realiza la petición al modelo "openai/gpt-4.1" usando la API de GitHub Models y muestra el resultado o el mensaje de error correspondiente.
+6. Asegúrate de cumplir con los criterios funcionales y técnicos descritos arriba.
+7. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución usando los siguientes comandos dentro de la carpeta `challenge_2`:
+   ```sh
+   git add index.js
+   git commit -m "Solución challenge 2"
+   git push
+   ```
+8. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 2 para su revisión.
 
 
-### Ejemplo de ejecución
 
-- Ejecuta:  
-  ```
-  npm start -- TU_API_KEY "Este producto es increíble, me encantó"
-  ```
-- La salida debe ser:  
-  ```
-  Sentimiento detectado: positivo
-  ```
 
 ### Notas importantes
 - El API KEY **debe** ser generado desde [GitHub Models](https://github.com/marketplace/models) y tener permisos "models:read".
