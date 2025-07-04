@@ -14,7 +14,7 @@ Debes crear una aplicación sencilla en Node.js que procese información de empl
 
 ```
 challenge_4/
-├── INDEX.js
+├── Index.js
 ├── empleados.json
 ├── package.json
 └── ...
@@ -23,7 +23,7 @@ challenge_4/
 ### Criterios de aceptación funcionales
 
 1. El programa debe leer el archivo empleados.json ubicado en la raíz del proyecto.
-2. El archivo principal debe llamarse `INDEX.js` y estar en la raíz de la carpeta.
+2. El archivo principal debe llamarse `Index.js` y estar en la raíz de la carpeta.
 3. Si el archivo no existe, debe mostrar exactamente:
    - `No se encontró el archivo empleados.json`
 4. Si el archivo existe pero el contenido no es un JSON válido, debe mostrar exactamente:
@@ -36,7 +36,7 @@ challenge_4/
 **Criterios de Aceptación Técnicos:**
 - El programa debe estar implementado en Node.js usando JavaScript.
 - El código fuente debe estar en el repositorio GitHub suministrado en una carpeta con nombre _challenge_4_.
-- El archivo principal debe llamarse `INDEX.js` y estar en la raíz de la carpeta.
+- El archivo principal debe llamarse `Index.js` y estar en la raíz de la carpeta.
 - El archivo empleados.json debe estar presente en la raíz del proyecto.
 - El archivo package.json debe incluir el script "start" para ejecutar el programa con `npm start`.
 - El código fuente debe ejecutarse correctamente y cumplir todos los criterios de aceptación funcionales.
@@ -55,7 +55,7 @@ npm start
 1. Clona la carpeta correspondiente a challenge_4 desde el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/tree/main
 2. Crea el archivo empleados.json en la raíz del proyecto con la estructura y datos de ejemplo proporcionados.
-3. Implementa la lógica para leer, filtrar y agrupar los empleados según los criterios funcionales en el archivo `INDEX.js`.
+3. Implementa la lógica para leer, filtrar y agrupar los empleados según los criterios funcionales en el archivo `Index.js`.
 4. Asegúrate de cumplir con los criterios funcionales y técnicos descritos arriba.
 5. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución usando los siguientes comandos dentro de la carpeta `challenge_4`:
    ```sh
