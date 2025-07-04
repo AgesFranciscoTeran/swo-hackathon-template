@@ -34,11 +34,15 @@ public class ValidadorFechaTest {
 
     @Test
     void fechaBisiestoCorrecta_retornaTrue() {
-        assertTrue(ValidadorFecha.esFechaValida("29/02/2024"));
+        // Año bisiesto típico dentro del rango permitido
+        assertTrue(ValidadorFecha.esFechaValida("29/02/2024"), "29/02/2024 sí debe ser válido (bisiesto)");
+        // Puedes agregar más casos límite como 2008, 2012, 2016, etc.
     }
 
     @Test
     void fechaBisiestoIncorrecta_retornaFalse() {
-        assertFalse(ValidadorFecha.esFechaValida("29/02/2023"));
+        // Año no bisiesto típico dentro del rango permitido
+        assertFalse(ValidadorFecha.esFechaValida("29/02/2023"), "29/02/2023 no debe ser válido (no bisiesto)");
+        // Puedes agregar más casos límite como 2019, 2021, etc.
     }
 }

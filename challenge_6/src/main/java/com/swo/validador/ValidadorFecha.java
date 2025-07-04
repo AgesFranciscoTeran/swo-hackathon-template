@@ -18,9 +18,14 @@ public class ValidadorFecha {
         if (fecha == null || fecha.trim().isEmpty()) {
             return false;
         }
+        String input = fecha.trim();
         for (DateTimeFormatter formatter : FORMATTERS) {
             try {
-                LocalDate date = LocalDate.parse(fecha.trim(), formatter);
+                LocalDate date = LocalDate.parse(input, formatter);
+                // Validar que la fecha formateada sea igual a la entrada normalizada
+                if (!date.format(formatter).equals(input)) {
+                    continue;
+                }
                 if (date.getYear() < 2000 || date.getYear() > 2099) {
                     return false;
                 }
