@@ -18,9 +18,16 @@ test_calculadora.py
 README.md
 ```
 
-## Criterios funcionales y técnicos
-- El archivo de pruebas debe llamarse **test_calculadora.py**.
-- Debes implementar al menos los siguientes tests (pueden tener estos nombres o equivalentes):
+
+## Criterios de aceptación funcionales
+- El archivo de pruebas debe llamarse **test_calculadora.py** y estar en la raíz de la carpeta `challenge_5`.
+- Debes implementar pruebas unitarias para todas las funciones de la calculadora, cubriendo:
+  - Operaciones con enteros, decimales y números negativos.
+  - Manejo de errores como división entre cero o raíz cuadrada de números negativos.
+  - Promedio de listas vacías.
+- Las pruebas deben ejecutarse correctamente usando el módulo `unittest` de Python.
+
+**Pruebas mínimas requeridas:**
   - `test_sumar_positivos`: prueba la función sumar con dos números positivos.
   - `test_potencia_positiva`: prueba la función potencia con base y exponente positivos.
   - `test_promedio_lista`: prueba la función promedio con una lista de números.
@@ -30,6 +37,11 @@ README.md
   - `test_modulo_borde`: prueba la función modulo con divisor 1.
   - `test_multiplicar_decimales`: prueba la función multiplicar con decimales.
   - `test_potencia_decimal_negativo`: prueba la función potencia con base negativa y exponente par.
+
+## Criterios de aceptación técnicos
+- El archivo `test_calculadora.py` debe ser creado por el usuario y contener todas las pruebas unitarias solicitadas.
+- El código fuente debe ejecutarse correctamente y cumplir todos los criterios funcionales y técnicos.
+- Se debe validar que las funciones manejen correctamente los errores y casos extremos.
 
 ## Ejemplo de ejecución
 En la terminal, dentro de la carpeta del proyecto, ejecuta:
@@ -58,6 +70,7 @@ La salida debe mostrar que todas las pruebas pasan correctamente o indicar los e
 ## Observaciones
 - Valida que las funciones manejen correctamente los errores y casos extremos.
 - El archivo `test_calculadora.py` debe ser creado por el usuario y contener todas las pruebas unitarias solicitadas.
+- **No modifiques el archivo `calculadora.py`.**
 
 ## Recursos útiles
 - [Documentación oficial de unittest](https://docs.python.org/3/library/unittest.html)
