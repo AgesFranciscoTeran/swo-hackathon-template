@@ -21,10 +21,3 @@
 | 16 | Corrección errores Python | Python | Análisis de código |
 | 17 | Resolver Preguntas Código | Java | Análisis de código |
 | 18 | Pruebas ligeras de carga | K6 | Pruebas de Carga |
-
-## Estructura
-```
-challenge_<Id>/
-├── README.md
-└── ...
-```
