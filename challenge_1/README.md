@@ -87,8 +87,8 @@ python password_generator.py 20
 - No es necesario un archivo `.env` ni configuración adicional.
 - Si no se proporciona el argumento de longitud, el script mostrará un error y terminará.
 
-## Observación
-Se debe validar que la longitud no se encuentre vacía y cumpla con los criterios, pues el equipo que presente el ejercicio debe realizar sus correspondientes pruebas.
+## Observaciónes
+- Se debe validar que la longitud no se encuentre vacía y cumpla con los criterios, pues el equipo que presente el ejercicio debe realizar sus correspondientes pruebas.
 
 ### Recurso útil
 - [Documentación oficial de Python](https://docs.python.org/3/)
