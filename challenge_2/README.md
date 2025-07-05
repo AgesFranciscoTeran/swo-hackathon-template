@@ -10,7 +10,8 @@ El objetivo es experimentar la integración de modelos de lenguaje avanzados den
 
 ## Prerequisitos
 
-- [Node.js v22](https://nodejs.org/en/download) y [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) instalados en tu sistema.
+- [Node.js v22](https://nodejs.org/en/download)
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - Sistema operativo: Windows, macOS o Linux.
 - API KEY válida generada desde [GitHub Models](https://github.com/marketplace/models) con permisos "models:read" (no usar claves de OpenAI ni de otros proveedores).
 - El modelo a utilizar es "openai/gpt-4.1".
