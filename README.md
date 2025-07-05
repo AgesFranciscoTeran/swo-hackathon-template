@@ -1,4 +1,21 @@
 # Hackatón GitHub Copilot
+
+## Instrucciones
+1. Clona el repositorio localmente.
+2. Identifica el reto a solucionar.
+3. Abre la carpeta challenge_<id> del reto seleccionado con el IDE preferido.
+4. Lee atentamente las instrucciones y criterios del reto en el archivo README.md.
+5. Construye la solución del reto en la carpeta.
+6. Sube los cambios al repositorio remoto.
+7. Ve a la Plataforma oficial de la Hackatón, y envía la solución del reto para su revisión.
+
+## Estructura
+```
+challenge_<Id>/
+├── README.md
+└── ...
+```
+
 ## Retos
 
 | ID | Título | Tecnología | Categoría |
