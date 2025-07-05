@@ -72,4 +72,3 @@ La salida debe mostrar que todas las pruebas pasan correctamente o indicar los e
 
 ## Recursos útiles
 - [Documentación oficial de unittest](https://docs.python.org/3/library/unittest.html)
-
