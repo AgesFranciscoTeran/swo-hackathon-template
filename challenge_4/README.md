@@ -1,5 +1,5 @@
-
-# hackaton-challenge-4
+![image](https://github.com/user-attachments/assets/07e5aee1-4de9-4482-8c2a-74bea8aa2125)
+# Reto 4: Procesar texto en JSON
 
 ## Descripción
 
@@ -7,7 +7,8 @@ Debes crear una aplicación sencilla en Node.js que procese información de empl
 
 ## Prerequisitos
 
-- Node.js y npm instalados en tu sistema ([Node.js — Download Node.js®](https://github.com/user-attachments/assets/7fff0577-c1c2-4a63-9ae9-55e2103a06aa)).
+- [Node.js v22](https://nodejs.org/en/download)
+- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - Sistema operativo: Windows, macOS o Linux.
 
 ## Estructura del Proyecto
