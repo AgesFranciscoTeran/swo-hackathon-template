@@ -7,7 +7,7 @@ Debes crear una aplicación sencilla en Node.js que procese información de empl
 
 ## Prerequisitos
 
-- Node.js y npm instalados en tu sistema (Node.js — Download Node.js®![image](https://github.com/user-attachments/assets/50062741-f74b-49dc-9fd7-c22cc031d128)).
+- Node.js y npm instalados en tu sistema ([Node.js — Download Node.js®](https://github.com/user-attachments/assets/7fff0577-c1c2-4a63-9ae9-55e2103a06aa)).
 - Sistema operativo: Windows, macOS o Linux.
 
 ## Estructura del Proyecto
