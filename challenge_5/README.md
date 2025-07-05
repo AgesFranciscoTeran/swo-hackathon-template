@@ -1,5 +1,3 @@
-
-
 # Challenge 5: Calculadora Básica
 
 ## Descripción
@@ -8,7 +6,7 @@ Recibirás una calculadora científica en Python que ya implementa operaciones m
 Tu objetivo es crear un archivo de pruebas unitarias para validar el correcto funcionamiento de cada operación, incluyendo casos extremos y entradas inválidas.
 
 ## Prerrequisitos
-- Python 3 instalado.
+- [Python v3.13](https://wiki.python.org/moin/BeginnersGuide/Download).
 - Sistema operativo: Windows, macOS o Linux.
 
 ## Estructura del proyecto
@@ -18,7 +16,6 @@ test_calculadora.py
 README.md
 ```
 
-
 ## Criterios de aceptación funcionales
 - El archivo de pruebas debe llamarse **test_calculadora.py** y estar en la raíz de la carpeta `challenge_5`.
 - Debes implementar pruebas unitarias para todas las funciones de la calculadora, cubriendo:
@@ -27,7 +24,7 @@ README.md
   - Promedio de listas vacías.
 - Las pruebas deben ejecutarse correctamente usando el módulo `unittest` de Python.
 
-**Pruebas mínimas requeridas:**
+### Pruebas mínimas requeridas
   - `test_sumar_positivos`: prueba la función sumar con dos números positivos.
   - `test_potencia_positiva`: prueba la función potencia con base y exponente positivos.
   - `test_promedio_lista`: prueba la función promedio con una lista de números.
@@ -38,12 +35,13 @@ README.md
   - `test_multiplicar_decimales`: prueba la función multiplicar con decimales.
   - `test_potencia_decimal_negativo`: prueba la función potencia con base negativa y exponente par.
 
-## Criterios de aceptación técnicos
+### Criterios de aceptación técnicos
 - El archivo `test_calculadora.py` debe ser creado por el usuario y contener todas las pruebas unitarias solicitadas.
 - El código fuente debe ejecutarse correctamente y cumplir todos los criterios funcionales y técnicos.
 - Se debe validar que las funciones manejen correctamente los errores y casos extremos.
 
-## Ejemplo de ejecución
+### Ejemplo de ejecución
+
 En la terminal, dentro de la carpeta del proyecto, ejecuta:
 ```
 python -m unittest test_calculadora.py
