@@ -14,7 +14,7 @@ El objetivo es practicar la generación de contraseñas seguras y la validación
 
 ## Prerequisitos
 
-- Python 3.13 o superior
+- [Python 3.13](https://wiki.python.org/moin/BeginnersGuide/Download)
 - Sistema operativo: Windows, macOS o Linux
 
 ## Estructura del Proyecto
