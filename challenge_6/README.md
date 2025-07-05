@@ -1,12 +1,11 @@
-
-# Challenge 6: Validación de Fechas (Java)
+# Reto 6: Validador de Fechas
 
 ## Descripción
 Recibirás una función en Java que valida fechas ingresadas como texto, admitiendo múltiples formatos y un rango específico de años. Tu objetivo es crear un archivo de pruebas unitarias que cubra distintos escenarios: formatos válidos e inválidos, fechas fuera de rango, nulas, vacías, años bisiestos, etc.
 
 ## Prerrequisitos
-- Java 17 o superior instalado.
-- Maven instalado.
+- [Java v21](https://www.oracle.com/co/java/technologies/downloads/)
+- [maven](https://maven.apache.org/install.html)
 - JUnit 5 para pruebas unitarias.
 - Sistema operativo: Windows, macOS o Linux.
 
@@ -22,7 +21,6 @@ swo-hackaton-challenge-6/
 ```
 
 > **Nota:** El archivo `ValidadorFechaTest.java` no está incluido por defecto. Debes crearlo tú mismo en la ruta indicada (`src/test/java/com/swo/validador/ValidadorFechaTest.java`) para implementar las pruebas unitarias solicitadas.
-
 
 ## Criterios de aceptación funcionales
 - El archivo de pruebas debe llamarse `ValidadorFechaTest.java` y estar en `src/test/java/com/swo/validador/`.
@@ -43,19 +41,19 @@ swo-hackaton-challenge-6/
 - Puedes agregar otros casos que consideres relevantes para asegurar la robustez de la validación.
 - Todas las pruebas deben ejecutarse correctamente con Maven.
 
-## Criterios de aceptación técnicos
+### Criterios de aceptación técnicos
 - El archivo `ValidadorFechaTest.java` debe ser creado por el usuario y contener todas las pruebas unitarias solicitadas.
 - El código fuente debe compilar sin errores y cumplir todos los criterios funcionales y técnicos.
 - No modifiques el archivo `ValidadorFecha.java`.
 
-## Ejemplo de ejecución
+### Ejemplo de ejecución
 En la terminal, dentro de la carpeta del proyecto, ejecuta:
 ```
 mvn test
 ```
 La salida debe mostrar que todas las pruebas pasan correctamente o indicar los errores encontrados.
 
-## Pasos para implementar y entregar
+## Instrucciones de implementación del ejercicio
 1. Clona el repositorio base del hackathon:
    ```
    git clone <URL_DEL_REPOSITORIO>
