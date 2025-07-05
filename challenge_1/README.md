@@ -25,7 +25,7 @@ challenge_1/
 └── ...
 ```
 
-### Criterios de aceptación funcionales
+##Criterios de aceptación
 
 1. El programa debe solicitar la longitud de la contraseña como argumento desde la línea de comandos.
 2. Si no se proporciona la longitud o no es un número entero, debe mostrar el mensaje:
@@ -43,7 +43,7 @@ challenge_1/
    - `Error: Detalle del error`
 7. El código debe estar en un archivo llamado `password_generator.py` en la raíz de la carpeta `challenge_1`.
 
-**Criterios de Aceptación Técnicos:**
+### Criterios de Aceptación Técnicos:
 - El programa debe estar implementado en Python.
 - El código fuente debe estar en el repositorio GitHub suministrado en una carpeta con nombre _challenge_1_.
 - El archivo principal debe llamarse `password_generator.py` y estar en la raíz de la carpeta.
@@ -67,7 +67,7 @@ python password_generator.py 16
 python password_generator.py 20
 ```
 
-### Instrucciones de implementación del ejercicio
+## Instrucciones de implementación del ejercicio
 
 1. Clona la carpeta correspondiente a challenge_1 desde el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/tree/main
@@ -81,14 +81,13 @@ python password_generator.py 20
    ```
 5. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 1 para su revisión.
 
-
-### Notas importantes
+## Notas importantes
 - El script debe ejecutarse con Python 3.13 o superior.
 - El parámetro de longitud debe pasarse siempre como argumento al ejecutar el script.
 - No es necesario un archivo `.env` ni configuración adicional.
 - Si no se proporciona el argumento de longitud, el script mostrará un error y terminará.
 
-### Observación
+## Observación
 Se debe validar que la longitud no se encuentre vacía y cumpla con los criterios, pues el equipo que presente el ejercicio debe realizar sus correspondientes pruebas.
 
 ### Recurso útil
