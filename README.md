@@ -15,7 +15,7 @@
 | 10 | Convertir código de Java en NodeJS | NodeJS | Modernización |
 | 11 | Publicación servicios en Azure | .Net | Modernización |
 | 12 | Crear terraform para publicación de servicios en Azure | Terraform | IaC |
-| 13 | Automatización CI Azure DevOps | ylm / Azure Pipelines | DevOps |
+| 13 | Automatización CI Azure DevOps | yml / Azure Pipelines | DevOps |
 | 14 | Documentar API reserva de turnos | Java | Documentación |
 | 15 | Swagger API Consulta de Productos | java | Documentación |
 | 16 | Corrección errores Python | Python | Análisis de código |
