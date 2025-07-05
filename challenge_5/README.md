@@ -16,7 +16,7 @@ test_calculadora.py
 README.md
 ```
 
-## Criterios de aceptación funcionales
+## Criterios de aceptación
 - El archivo de pruebas debe llamarse **test_calculadora.py** y estar en la raíz de la carpeta `challenge_5`.
 - Debes implementar pruebas unitarias para todas las funciones de la calculadora, cubriendo:
   - Operaciones con enteros, decimales y números negativos.
