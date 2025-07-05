@@ -25,7 +25,7 @@ challenge_1/
 └── ...
 ```
 
-##Criterios de aceptación
+## Criterios de aceptación
 
 1. El programa debe solicitar la longitud de la contraseña como argumento desde la línea de comandos.
 2. Si no se proporciona la longitud o no es un número entero, debe mostrar el mensaje:
