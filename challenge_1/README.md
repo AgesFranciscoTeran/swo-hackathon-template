@@ -1,5 +1,5 @@
 
-# hackaton-challenge-1
+# Reto 1: Generación de Contraseñas Seguras
 
 ## Descripción
 
