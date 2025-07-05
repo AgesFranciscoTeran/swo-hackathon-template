@@ -1,7 +1,7 @@
 # Hackatón GitHub Copilot
 ## Retos
 
-| ID | Título | Lenguaje de programación | Categoría |
+| ID | Título | Tecnología | Categoría |
 | --- | --- | --- | --- |
 | 1 | Generador de Contraseñas Seguras | Python | Creación de código nuevo |
 | 2 | Analizador de sentimientos | NodeJS | Creación de código nuevo |
