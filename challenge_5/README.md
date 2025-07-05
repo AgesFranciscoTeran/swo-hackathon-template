@@ -1,4 +1,4 @@
-# Challenge 5: Calculadora Básica
+# Reto 5: Calculadora Básica
 
 ## Descripción
 Recibirás una calculadora científica en Python que ya implementa operaciones matemáticas básicas y avanzadas (suma, resta, multiplicación, división, potencia, raíz cuadrada, módulo y promedio).
