@@ -50,7 +50,7 @@ challenge_1/
 - La ejecución del programa debe permitir pasar el parámetro de longitud directamente desde la línea de comandos.
 - El código fuente debe ejecutarse correctamente y cumplir todos los criterios de aceptación funcionales.
 
-### Ejemplo de Ejecución con Parámetro de Línea de Comandos
+### Ejemplo de Ejecución
 
 Ejecuta el programa desde la terminal, dentro de la carpeta del proyecto:
 
