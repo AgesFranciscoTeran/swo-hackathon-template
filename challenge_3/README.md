@@ -7,7 +7,7 @@ Debes crear una aplicación backend sencilla en C# utilizando ASP.NET Core Web A
 
 ## Prerequisitos
 
-- .NET SDK 8.0
+- [.NET SDK 8.0](https://versionsof.net/core/8.0/)
 - Sistema operativo: Windows, macOS o Linux
 - Postman para pruebas de la API
 
@@ -87,5 +87,5 @@ http://localhost:5000
 ## Observaciones
 - Se debe validar que los endpoints respondan correctamente y que la estructura de la respuesta sea la esperada.
 
-### Recurso útil
+## Recurso útil
 - [Documentación oficial de ASP.NET Core](https://learn.microsoft.com/es-es/aspnet/core/?view=aspnetcore-7.0)
