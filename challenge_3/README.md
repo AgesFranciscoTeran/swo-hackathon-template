@@ -1,5 +1,5 @@
 
-# hackaton-challenge-3
+# Reto 3: API Gestión de Tareas
 
 ## Descripción
 
@@ -7,7 +7,7 @@ Debes crear una aplicación backend sencilla en C# utilizando ASP.NET Core Web A
 
 ## Prerequisitos
 
-- .NET SDK 7.0 o superior
+- .NET SDK 8.0
 - Sistema operativo: Windows, macOS o Linux
 - Postman para pruebas de la API
 
@@ -27,7 +27,7 @@ challenge_3/
 └── ...
 ```
 
-### Criterios de aceptación funcionales
+## Criterios de aceptación
 
 1. La API debe exponer los siguientes endpoints:
    - `GET /tareas`: Listar todas las tareas.
@@ -39,7 +39,7 @@ challenge_3/
 4. El modelo de tarea debe incluir: id, titulo, descripcion, completada (bool).
 5. El código debe estar en la carpeta `challenge_3` y compilar correctamente.
 
-**Criterios de Aceptación Técnicos:**
+### Criterios de Aceptación Técnicos
 - El programa debe estar implementado en C# con ASP.NET Core Web API.
 - El código fuente debe estar en el repositorio GitHub suministrado en una carpeta con nombre _challenge_3_.
 - El archivo principal debe llamarse `Program.cs` y estar en la raíz de la carpeta.
@@ -62,7 +62,7 @@ La API debe estar disponible en:
 http://localhost:5000
 ```
 
-### Instrucciones de implementación del ejercicio
+## Instrucciones de implementación del ejercicio
 
 1. Clona la carpeta correspondiente a challenge_3 desde el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/tree/main
@@ -78,14 +78,14 @@ http://localhost:5000
    ```
 7. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 3 para su revisión.
 
-### Notas importantes
+## Notas importantes
 - El almacenamiento de tareas es en memoria (no persistente).
 - La API debe ejecutarse únicamente en HTTP (no HTTPS) y en el puerto 5000.
 - Todas las pruebas deben realizarse desde Postman.
 - El código fuente debe compilar y cumplir todos los criterios funcionales y técnicos.
 
-### Observación
-Se debe validar que los endpoints respondan correctamente y que la estructura de la respuesta sea la esperada.
+## Observaciones
+- Se debe validar que los endpoints respondan correctamente y que la estructura de la respuesta sea la esperada.
 
 ### Recurso útil
 - [Documentación oficial de ASP.NET Core](https://learn.microsoft.com/es-es/aspnet/core/?view=aspnetcore-7.0)
