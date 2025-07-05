@@ -7,7 +7,7 @@ Debes crear una aplicación sencilla en Node.js que procese información de empl
 
 ## Prerequisitos
 
-- Node.js y npm instalados en tu sistema.
+- Node.js y npm instalados en tu sistema (Node.js — Download Node.js®![image](https://github.com/user-attachments/assets/50062741-f74b-49dc-9fd7-c22cc031d128)).
 - Sistema operativo: Windows, macOS o Linux.
 
 ## Estructura del Proyecto
@@ -20,7 +20,7 @@ challenge_4/
 └── ...
 ```
 
-### Criterios de aceptación funcionales
+## Criterios de aceptación
 
 1. El programa debe leer el archivo empleados.json ubicado en la raíz del proyecto.
 2. El archivo principal debe llamarse `Index.js` y estar en la raíz de la carpeta.
@@ -33,7 +33,7 @@ challenge_4/
 7. Si no hay empleados que cumplan los criterios, no debe mostrar ninguna ciudad ni empleado.
 8. El código debe estar en la carpeta `challenge_4` y ejecutarse correctamente con Node.js.
 
-**Criterios de Aceptación Técnicos:**
+### Criterios de Aceptación Técnicos
 - El programa debe estar implementado en Node.js usando JavaScript.
 - El código fuente debe estar en el repositorio GitHub suministrado en una carpeta con nombre _challenge_4_.
 - El archivo principal debe llamarse `Index.js` y estar en la raíz de la carpeta.
@@ -50,7 +50,7 @@ npm install
 npm start
 ```
 
-### Instrucciones de implementación del ejercicio
+## Instrucciones de implementación del ejercicio
 
 1. Clona la carpeta correspondiente a challenge_4 desde el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/tree/main
@@ -65,23 +65,23 @@ npm start
    ```
 6. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 4 para su revisión.
 
-### Notas importantes
+## Notas importantes
 - El archivo empleados.json debe estar correctamente formado y en la raíz del proyecto.
 - Todos los datos deben procesarse en memoria, sin uso de bases de datos ni almacenamiento externo.
 - La solución debe ejecutarse únicamente por consola, sin requerir interfaz gráfica ni servicios web.
 - El código fuente debe ejecutarse correctamente y cumplir todos los criterios funcionales y técnicos.
 
-### Observación
-Se debe validar que la salida cumpla exactamente con el formato especificado y que los errores se muestren según lo solicitado.
+## Observaciones
+- Se debe validar que la salida cumpla exactamente con el formato especificado y que los errores se muestren según lo solicitado.
 
-### Recursos útiles
+## Recursos Útiles
 - [Documentación oficial de Node.js](https://nodejs.org/es/docs/)
 - [Guía de estilo de JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide)
 - [Introducción a JSON](https://www.json.org/json-es.html)
 - [Manejo de archivos en Node.js](https://nodejs.dev/learn/leer-y-escribir-archivos-json-en-nodejs)
 - [Curso básico de Node.js](https://www.freecodecamp.org/learn/back-end-development-and-apis/introduction-to-nodejs)
 
-#### JSON 
+### JSON 
 
 ```json
 [
