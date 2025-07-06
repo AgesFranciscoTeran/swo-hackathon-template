@@ -1,7 +1,11 @@
 # Reto 8: Simplificación de Condicionales en Evaluador de Riesgo de Crédito
 
 ## Descripción
-Recibirás una clase Java con lógica de evaluación de riesgo crediticio que contiene condicionales complejos y poco optimizados. Tu objetivo es refactorizar el código para simplificar los condicionales, mejorando la legibilidad y mantenibilidad, utilizando funciones auxiliares en una clase separada.
+En una organización del sector financiero, se identificó un componente crítico del sistema de evaluación crediticia que contiene una gran cantidad de condicionales anidados, reglas duplicadas y malas prácticas de codificación. Este componente ha crecido sin una estructura clara, dificultando su mantenimiento, escalabilidad y validación de cambios.
+
+Tu misión es tomar ese código legado —específicamente la clase `EvaluadorRiesgoCredito`— y refactorizarlo aplicando buenas prácticas de desarrollo. Deberás organizar la lógica dispersa, separar responsabilidades en funciones auxiliares y mejorar la legibilidad sin modificar el comportamiento del sistema.
+
+Este ejercicio simula un caso real de modernización de código dentro de una organización, donde el objetivo no es solo que el programa funcione, sino que también sea mantenible, escalable y fácil de entender para otros desarrolladores.
 
 ## Prerrequisitos
 - [Java v21](https://www.oracle.com/co/java/technologies/downloads/)
@@ -18,13 +22,13 @@ swo-hackaton-challenge-8/
 └── 
 ```
 
-> **Nota:** Debes realizar la refactorización en `EvaluadorRiesgoCredito.java` y crear/usar funciones auxiliares en `ReglasNegocio.java` para simplificar la lógica.
+> **Nota:** La clase `ReglasNegocio.java` ya contiene la lógica de negocio implementada. Tu tarea es refactorizar `EvaluadorRiesgoCredito.java` para optimizar las consultas utilizando estos métodos.
 
 ## Criterios de aceptación funcionales
 - El código de evaluación de riesgo debe estar en `EvaluadorRiesgoCredito.java`.
-- La lógica de negocio simplificada debe implementarse en métodos auxiliares dentro de `ReglasNegocio.java`.
 - El código debe ser más legible, fácil de mantener y sin condicionales anidados innecesarios.
 - El programa debe seguir funcionando correctamente y producir los mismos resultados que la versión original.
+- **Debes optimizar las consultas en `EvaluadorRiesgoCredito.java` utilizando los métodos ya disponibles en `ReglasNegocio.java`.**
 
 ### Casos de prueba sugeridos
 | Escenario | Descripción |
@@ -40,7 +44,7 @@ swo-hackaton-challenge-8/
 
 ### Criterios de aceptación técnicos
 - El código debe compilar sin errores.
-- La lógica debe estar correctamente separada entre las dos clases.
+- La lógica debe utilizar eficientemente los métodos ya implementados en `ReglasNegocio.java`.
 - No debe haber condicionales anidados innecesarios en `EvaluadorRiesgoCredito.java`.
 
 ### Ejemplo de ejecución
@@ -63,12 +67,12 @@ La salida debe mostrar los resultados de la evaluación de riesgo para los casos
    ```
    src/main/java/
    ```
-3. Refactoriza el código, moviendo la lógica de negocio a métodos auxiliares en `ReglasNegocio.java`.
+3. Refactoriza el código en `EvaluadorRiesgoCredito.java`, optimizando las consultas y utilizando los métodos ya disponibles en `ReglasNegocio.java`.
 4. Asegúrate de que el código compile y funcione correctamente.
 5. Realiza commit de tus cambios:
    ```
-   git add src/main/java/EvaluadorRiesgoCredito.java src/main/java/ReglasNegocio.java
-   git commit -m "Refactoriza condicionales y simplifica lógica de negocio"
+   git add src/main/java/EvaluadorRiesgoCredito.java
+   git commit -m "Refactoriza condicionales y optimiza lógica de evaluación"
    git push
    ```
 6. Sube tu solución según las instrucciones del hackathon.
