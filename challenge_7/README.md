@@ -1,31 +1,75 @@
-# Reto 7: Cálculo de tasa de interes
+# Reto: Simulador de Interés
 
 ## Descripción
+Una empresa del sector bancario ha implementado una solución para validar y calcular un aproximado del cálculo de tasas de interés para diferentes productos financieros. Sin embargo, buscan confirmar la robustez y exactitud de su lógica mediante la creación de pruebas unitarias que cubran distintos escenarios: tipos de producto válidos e inválidos, montos fuera de rango, tasas y plazos en cero, y combinaciones de parámetros. Tu objetivo es diseñar y ejecutar estas pruebas para asegurar la calidad del sistema.
+
+El archivo de pruebas unitarias debe llamarse **`calculoInteresService.test.js`** y debe estar ubicado en la carpeta **`tests/`** dentro del proyecto, es decir: `tests/calculoInteresService.test.js`. No modifiques la estructura del proyecto ni cambies el nombre o ubicación del archivo de pruebas.
 
 ## Prerrequisitos
-- [Node.js v22](https://nodejs.org/en/download)
-- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Node.js v18+](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+- Jest para pruebas unitarias.
 - Sistema operativo: Windows, macOS o Linux.
 
-## Estructura del proyecto
-```
-swo-hackaton-challenge-7/
-└── ...
-```
-
-## Criterios de aceptación
-
+## Criterios de aceptación funcionales
+- El archivo de pruebas debe llamarse `calculoInteresService.test.js` y estar en `tests/`.
+- Debes implementar al menos ocho pruebas unitarias usando Jest, cubriendo distintos escenarios que permitan validar la lógica, el manejo de errores y la robustez del sistema ante diferentes tipos de entrada.
 
 ### Criterios de aceptación técnicos
-
+- El archivo `calculoInteresService.test.js` debe ser creado o completado por el usuario y contener todas las pruebas unitarias solicitadas.
+- El código fuente debe ejecutarse sin errores y cumplir todos los criterios funcionales y técnicos.
+- No modifiques los archivos de lógica principal salvo para corregir errores o mejorar validaciones.
 
 ### Ejemplo de ejecución
-
+En la terminal, dentro de la carpeta del proyecto, ejecuta:
+```
+npm test
+```
+La salida debe mostrar que todas las pruebas pasan correctamente o indicar los errores encontrados.
 
 ## Instrucciones de implementación del ejercicio
-
+1. Clona el repositorio base del reto:
+   ```
+   git clone <URL_DEL_REPOSITORIO>
+   cd swo-hackaton-challenge_7
+   ```
+2. Verifica que tienes el archivo `calculoInteresService.js` en:
+   ```
+   services/calculoInteresService.js
+   ```
+3. Crea la carpeta `tests/` en la raíz del proyecto si no existe.
+4. Dentro de la carpeta `tests/`, crea el archivo de pruebas unitarias llamado:
+   ```
+   calculoInteresService.test.js
+   ```
+5. Implementa al menos ocho pruebas unitarias usando Jest, cubriendo los siguientes escenarios:
+   - Tipo de producto no soportado (debe mostrar error)
+   - Monto menor al mínimo permitido (debe mostrar error)
+   - Monto mayor al máximo permitido (debe mostrar error)
+   - Cálculo correcto de interés simple y total para crédito personal válido
+   - Cálculo correcto de interés compuesto y total para CDP válido
+   - Simulación del total (monto + interés) correcto
+   - Cálculo correcto en diferentes escenarios de tasa y plazo
+   - Cálculo con tasa igual a 0 (interés debe ser 0)
+   - Cálculo con plazo igual a 0 (interés debe ser 0 o error si está validado)
+6. Ejecuta las pruebas localmente para validar que todo funcione:
+   ```
+   npm test
+   ```
+   La salida debe mostrar que todas las pruebas pasan correctamente o indicar los errores encontrados.
+7. Realiza commit de tus cambios:
+   ```
+   git add tests/calculoInteresService.test.js
+   git commit -m "Agrega pruebas unitarias para calculoInteresService"
+   git push
+   ```
+8. Sube tu solución según las instrucciones del reto.
 
 ## Observaciones
+- El archivo `calculoInteresService.test.js` debe ser creado o completado por el usuario y contener todas las pruebas unitarias solicitadas.
+- No modifiques los archivos de lógica principal salvo para corregir errores o mejorar validaciones.
+- El código fuente debe ejecutarse y todas las pruebas deben pasar correctamente.
+- Valida que la lógica de cálculo se comporte de forma consistente frente a distintas condiciones de entrada.
 
-
-## Recursos Útiles
+## Recursos útiles
+- [Documentación oficial de Jest](https://jestjs.io/)
