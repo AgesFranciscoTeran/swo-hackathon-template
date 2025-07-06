@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "tipo": "credito_personal",
+    "tasa": 0.15,
+    "plazoMeses": 12,
+    "montoMin": 1000,
+    "montoMax": 50000
+  },
+  {
+    "id": 2,
+    "tipo": "cdp",
+    "tasa": 0.12,
+    "plazoMeses": 12,
+    "montoMin": 5000,
+    "montoMax": 100000
+  }
+]
