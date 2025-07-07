@@ -15,7 +15,7 @@ Una empresa del sector bancario ha implementado una solución para validar y cal
 ### Criterios de aceptación técnicos
 - El archivo `calculoInteresService.test.js` debe ser creado o completado por el usuario y contener todas las pruebas unitarias solicitadas. El archivo debe estar ubicado en la carpeta **`tests/`** dentro del proyecto, es decir: `tests/calculoInteresService.test.js`. No modifiques la estructura del proyecto ni cambies el nombre o ubicación del archivo de pruebas.
 - Se debe garantizar que al ejecutar las pruebas genere el reporte de cobertura correspondiente.
-- El código fuente debe ejecutarse sin errores (con npm run build) y cumplir todos los criterios funcionales y técnicos.
+- El código fuente debe ejecutarse sin errores y cumplir todos los criterios funcionales y técnicos.
 - No modifiques los archivos de lógica principal salvo para corregir errores o mejorar validaciones.
 
 ### Ejemplo de ejecución
