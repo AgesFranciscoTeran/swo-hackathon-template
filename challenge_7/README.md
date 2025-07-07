@@ -3,8 +3,6 @@
 ## Descripción
 Una empresa del sector bancario ha implementado una solución para validar y calcular un aproximado del cálculo de tasas de interés para diferentes productos financieros. Sin embargo, buscan confirmar la robustez y exactitud de su lógica mediante la creación de pruebas unitarias que cubran distintos escenarios: tipos de producto válidos e inválidos, montos fuera de rango, tasas y plazos en cero, y combinaciones de parámetros. Tu objetivo es diseñar y ejecutar estas pruebas para asegurar la calidad del sistema.
 
-El archivo de pruebas unitarias debe llamarse **`calculoInteresService.test.js`** y debe estar ubicado en la carpeta **`tests/`** dentro del proyecto, es decir: `tests/calculoInteresService.test.js`. No modifiques la estructura del proyecto ni cambies el nombre o ubicación del archivo de pruebas.
-
 ## Prerrequisitos
 - [Node.js v18+](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
@@ -12,11 +10,10 @@ El archivo de pruebas unitarias debe llamarse **`calculoInteresService.test.js`*
 - Sistema operativo: Windows, macOS o Linux.
 
 ## Criterios de aceptación funcionales
-- El archivo de pruebas debe llamarse `calculoInteresService.test.js` y estar en `tests/`.
 - Debes implementar al menos ocho pruebas unitarias usando Jest, cubriendo distintos escenarios que permitan validar la lógica, el manejo de errores y la robustez del sistema ante diferentes tipos de entrada.
 
 ### Criterios de aceptación técnicos
-- El archivo `calculoInteresService.test.js` debe ser creado o completado por el usuario y contener todas las pruebas unitarias solicitadas.
+- El archivo `calculoInteresService.test.js` debe ser creado o completado por el usuario y contener todas las pruebas unitarias solicitadas. El archivo debe estar ubicado en la carpeta **`tests/`** dentro del proyecto, es decir: `tests/calculoInteresService.test.js`. No modifiques la estructura del proyecto ni cambies el nombre o ubicación del archivo de pruebas.
 - El código fuente debe ejecutarse sin errores y cumplir todos los criterios funcionales y técnicos.
 - No modifiques los archivos de lógica principal salvo para corregir errores o mejorar validaciones.
 
