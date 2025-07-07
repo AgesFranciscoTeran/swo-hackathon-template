@@ -1,4 +1,4 @@
-# Reto: Simulador de Interés
+# Reto 7: Simulador de Interés
 
 ## Descripción
 Una empresa del sector bancario ha implementado una solución para validar y calcular un aproximado del cálculo de tasas de interés para diferentes productos financieros. Sin embargo, buscan confirmar la robustez y exactitud de su lógica mediante la creación de pruebas unitarias que cubran distintos escenarios: tipos de producto válidos e inválidos, montos fuera de rango, tasas y plazos en cero, y combinaciones de parámetros. Tu objetivo es diseñar y ejecutar estas pruebas para asegurar la calidad del sistema.
