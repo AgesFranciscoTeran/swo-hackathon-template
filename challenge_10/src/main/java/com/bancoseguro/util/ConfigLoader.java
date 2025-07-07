@@ -9,7 +9,7 @@ public class ConfigLoader {
      */
     public static Config cargar() {
         double umbralMonto = 10000.0;
-var paisesRiesgosos = Arrays.asList("Obscuristan", "Peligrolandia", "Riesgovania");
+var paisesRiesgosos = Arrays.asList("Obscuristan", "Peligrolandia", "Riesgovania");//nombres de paises ficticios
         int limiteTransaccionesFrecuencia = 3;
         int ventanaFrecuenciaSegundos = 60;
 
