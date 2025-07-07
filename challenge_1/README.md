@@ -69,17 +69,14 @@ python password_generator.py 20
 
 ## Instrucciones de implementación del ejercicio
 
-1. Clona la carpeta correspondiente a challenge_1 desde el repositorio:
-   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/tree/main
-2. Crea un archivo llamado `password_generator.py` en la raíz del proyecto.
-3. Implementa la lógica para recibir la longitud desde la línea de comandos y generar la contraseña cumpliendo los criterios funcionales.
-4. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución usando los siguientes comandos dentro de la carpeta `challenge_1`:
-   ```sh
-   git add password_generator.py
-   git commit -m "Solución challenge 1"
-   git push
-   ```
-5. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 1 para su revisión.
+1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hckathon-template.git
+2. Clona el repositorio asignado para tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+4. En la carpeta correspondiente al reto, crea un archivo llamado `password_generator.py` en la carpeta `challenge_1`.
+5. Implementa la lógica para recibir la longitud desde la línea de comandos y generar la contraseña cumpliendo los criterios funcionales.
+6. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución.
+7. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 1 para su revisión.
 
 ## Notas importantes
 - El script debe ejecutarse con Python 3.13 o superior.
@@ -87,7 +84,7 @@ python password_generator.py 20
 - No es necesario un archivo `.env` ni configuración adicional.
 - Si no se proporciona el argumento de longitud, el script mostrará un error y terminará.
 
-## Observaciónes
+## Observaciones
 - Se debe validar que la longitud no se encuentre vacía y cumpla con los criterios, pues el equipo que presente el ejercicio debe realizar sus correspondientes pruebas.
 
 ### Recurso útil

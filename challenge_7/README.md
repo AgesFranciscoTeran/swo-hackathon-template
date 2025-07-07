@@ -28,42 +28,23 @@ npm test
 La salida debe mostrar que todas las pruebas pasan correctamente o indicar los errores encontrados.
 
 ## Instrucciones de implementación del ejercicio
-1. Clona el repositorio base del reto:
-   ```
-   git clone <URL_DEL_REPOSITORIO>
-   cd swo-hackaton-challenge_7
-   ```
-2. Verifica que tienes el archivo `calculoInteresService.js` en:
+1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+2. Clona el repositorio asignado para tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+4. En la carpeta correspondiente al reto, verifica que tienes el archivo `calculoInteresService.js` en:
    ```
    services/calculoInteresService.js
    ```
-3. Crea la carpeta `tests/` en la raíz del proyecto si no existe.
-4. Dentro de la carpeta `tests/`, crea el archivo de pruebas unitarias llamado:
+5. Crea la carpeta `tests/` en la raíz del proyecto si no existe.
+6. Dentro de la carpeta `tests/`, crea el archivo de pruebas unitarias llamado:
    ```
    calculoInteresService.test.js
    ```
-5. Implementa al menos ocho pruebas unitarias usando Jest, cubriendo los siguientes escenarios:
-   - Tipo de producto no soportado (debe mostrar error)
-   - Monto menor al mínimo permitido (debe mostrar error)
-   - Monto mayor al máximo permitido (debe mostrar error)
-   - Cálculo correcto de interés simple y total para crédito personal válido
-   - Cálculo correcto de interés compuesto y total para CDP válido
-   - Simulación del total (monto + interés) correcto
-   - Cálculo correcto en diferentes escenarios de tasa y plazo
-   - Cálculo con tasa igual a 0 (interés debe ser 0)
-   - Cálculo con plazo igual a 0 (interés debe ser 0 o error si está validado)
-6. Ejecuta las pruebas localmente para validar que todo funcione:
-   ```
-   npm test
-   ```
-   La salida debe mostrar que todas las pruebas pasan correctamente o indicar los errores encontrados.
-7. Realiza commit de tus cambios:
-   ```
-   git add tests/calculoInteresService.test.js
-   git commit -m "Agrega pruebas unitarias para calculoInteresService"
-   git push
-   ```
-8. Sube tu solución según las instrucciones del reto.
+7. Implementa las pruebas unitarias garantizando un buen porcentaje de cobertura.
+8. Ejecuta las pruebas localmente para validar que todo funcione.
+9. Realiza commit y push de tus cambios.
+10. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 7 para su revisión.
 
 ## Observaciones
 - El archivo `calculoInteresService.test.js` debe ser creado o completado por el usuario y contener todas las pruebas unitarias solicitadas.

@@ -59,19 +59,14 @@ npm start -- TU_API_KEY "Tu mensaje aquí"
 
 ## Instrucciones de implementación del ejercicio
 
-1. Clona la carpeta correspondiente a challenge_2 desde el repositorio:
-   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/tree/main
-2. Crea un archivo llamado `index.js` en la raíz del proyecto .
-3. Instala los paquetes necesarios: `@azure-rest/ai-inference` y `@azure/core-auth` (se instalan con el comando: `npm install @azure-rest/ai-inference @azure/core-auth`).
-4. Implementa la lógica para recibir el API KEY y el mensaje desde la línea de comandos.
-5. Realiza la petición al modelo "openai/gpt-4.1" usando la API de GitHub Models y muestra el resultado o el mensaje de error correspondiente.
-6. Asegúrate de cumplir con los criterios funcionales y técnicos descritos arriba.
-7. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución usando los siguientes comandos dentro de la carpeta `challenge_2`:
-   ```sh
-   git add index.js
-   git commit -m "Solución challenge 2"
-   git push
-   ```
+1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+2. Clona el repositorio asignado para tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+4. En la carpeta correspondiente al reto, crea un archivo llamado `index.js` en la raíz del proyecto .
+5. Instala los paquetes necesarios para implementar la aplicación.
+. Implementa la aplicación y asegúrate de cumplir con los criterios funcionales y técnicos descritos.
+7. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución.
 8. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 2 para su revisión.
 
 ## Notas importantes
