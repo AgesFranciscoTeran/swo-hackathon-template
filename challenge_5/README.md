@@ -49,21 +49,16 @@ python -m unittest test_calculadora.py
 La salida debe mostrar que todas las pruebas pasan correctamente o indicar los errores encontrados.
 
 ## Instrucciones de implementación del ejercicio
-1. Clona el repositorio base del hackathon:
-   ```
-   git clone https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
-   ```
-2. Ingresa a la carpeta `challenge_5` del repositorio clonado.
-3. Crea el archivo `test_calculadora.py` en la raíz del proyecto.
-4. Implementa los tests unitarios solicitados.
-5. Ejecuta las pruebas localmente para validar que todo funcione.
-6. Realiza commit de tus cambios:
-   ```
-   git add test_calculadora.py
-   git commit -m "Agrega pruebas unitarias para calculadora"
-   git push
-   ```
-7. Sube tu solución según las instrucciones del hackathon.
+1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+2. Clona el repositorio asignado para tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+4. Ingresa a la carpeta `challenge_5` del repositorio clonado.
+5. Crea el archivo `test_calculadora.py` en la raíz del proyecto.
+6. Implementa los tests unitarios solicitados.
+7. Ejecuta las pruebas localmente para validar que todo funcione.
+8. Realiza commit y push de tus cambios:
+9. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 5 para su revisión.
 
 ## Observaciones
 - Valida que las funciones manejen correctamente los errores y casos extremos.

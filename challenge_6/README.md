@@ -54,31 +54,23 @@ mvn test
 La salida debe mostrar que todas las pruebas pasan correctamente o indicar los errores encontrados.
 
 ## Instrucciones de implementación del ejercicio
-1. Clona el repositorio base del hackathon:
-   ```
-   git clone <URL_DEL_REPOSITORIO>
-   cd swo-hackaton-challenge-6
-   ```
-2. Verifica que tienes el archivo `ValidadorFecha.java` en:
+1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+2. Clona el repositorio asignado para tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+4. En la carpeta correspondiente al reto, verifica que tienes el archivo `ValidadorFecha.java` en:
    ```
    src/main/java/com/swo/validador/ValidadorFecha.java
    ```
-3. Crea el archivo de pruebas unitarias en:
+5. Crea el archivo de pruebas unitarias en:
    ```
    src/test/java/com/swo/validador/ValidadorFechaTest.java
    ```
-4. Implementa al menos ocho pruebas unitarias usando JUnit 5, cubriendo los escenarios solicitados.
-5. Ejecuta las pruebas localmente para validar que todo funcione:
-   ```
-   mvn test
-   ```
-6. Realiza commit de tus cambios:
-   ```
-   git add src/test/java/com/swo/validador/ValidadorFechaTest.java
-   git commit -m "Agrega pruebas unitarias para ValidadorFecha"
-   git push
-   ```
-7. Sube tu solución según las instrucciones del hackathon.
+6. Implementa al menos ocho pruebas unitarias usando JUnit 5, cubriendo los escenarios solicitados.
+7. Ejecuta las pruebas localmente para validar que todo funcione.
+8. Genera el reporte de cobertura usando Jacoco.
+9. Realiza commit y push de tus cambios.
+10. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 6 para su revisión.
 
 ## Observaciones
 - El archivo `ValidadorFechaTest.java` debe ser creado por el usuario y contener todas las pruebas unitarias solicitadas.

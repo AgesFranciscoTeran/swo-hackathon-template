@@ -64,24 +64,21 @@ http://localhost:5000
 
 ## Instrucciones de implementación del ejercicio
 
-1. Clona la carpeta correspondiente a challenge_3 desde el repositorio:
-   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/tree/main
-2. Implementa los endpoints y la lógica de almacenamiento en memoria según los criterios funcionales.
-3. Asegúrate de que la API use el puerto 5000 por HTTP (ajusta `launchSettings.json` si es necesario).
-4. Prueba todos los endpoints usando Postman.
-5. Asegúrate de cumplir con los criterios funcionales y técnicos descritos arriba.
-6. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución usando los siguientes comandos dentro de la carpeta `challenge_3`:
-   ```sh
-   git add .
-   git commit -m "Solución challenge 3"
-   git push
-   ```
+1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+2. Clona el repositorio asignado para tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+4. En la carpeta correspondiente al reto, implementa los endpoints y la lógica de almacenamiento en memoria según los criterios funcionales.
+5. Asegúrate de que la API use el puerto 5000 por HTTP.
+6. Prueba todos los endpoints usando Postman.
+7. Asegúrate de cumplir con los criterios funcionales y técnicos descritos arriba.
+8. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución.
 7. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 3 para su revisión.
 
 ## Notas importantes
 - El almacenamiento de tareas es en memoria (no persistente).
 - La API debe ejecutarse únicamente en HTTP (no HTTPS) y en el puerto 5000.
-- Todas las pruebas deben realizarse desde Postman.
+- Se sugiere realizar las pruebas usando Postman.
 - El código fuente debe compilar y cumplir todos los criterios funcionales y técnicos.
 
 ## Observaciones

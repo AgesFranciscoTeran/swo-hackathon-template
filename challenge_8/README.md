@@ -58,24 +58,18 @@ java EvaluadorRiesgoCredito
 La salida debe mostrar los resultados de la evaluación de riesgo para los casos de prueba implementados.
 
 ## Instrucciones de implementación del ejercicio
-1. Clona el repositorio base del hackathon:
-   ```
-   git clone <URL_DEL_REPOSITORIO>
-   cd swo-hackaton-challenge-8
-   ```
-2. Verifica que tienes los archivos `EvaluadorRiesgoCredito.java` y `ReglasNegocio.java` en:
+1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+2. Clona el repositorio asignado para tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+4. En la carpeta correspondiente al reto, verifica que tienes los archivos `EvaluadorRiesgoCredito.java` y `ReglasNegocio.java` en:
    ```
    src/main/java/
    ```
-3. Refactoriza el código en `EvaluadorRiesgoCredito.java`, optimizando las consultas y utilizando los métodos ya disponibles en `ReglasNegocio.java`.
-4. Asegúrate de que el código compile y funcione correctamente.
-5. Realiza commit de tus cambios:
-   ```
-   git add src/main/java/EvaluadorRiesgoCredito.java
-   git commit -m "Refactoriza condicionales y optimiza lógica de evaluación"
-   git push
-   ```
-6. Sube tu solución según las instrucciones del hackathon.
+5. Refactoriza el código en `EvaluadorRiesgoCredito.java`, optimizando las consultas y utilizando los métodos ya disponibles en `ReglasNegocio.java`.
+6. Asegúrate de que el código compile y funcione correctamente.
+7. Realiza commit y push de tus cambios.
+8. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 8 para su revisión.
 
 ## Observaciones
 - No modifiques la funcionalidad original, solo simplifica la lógica.

@@ -5,12 +5,8 @@ Este reto simula la migración de un sistema crítico de validación de transacc
 
 **Objetivo:** Migrar el código Java existente a Node.js manteniendo exactamente la misma funcionalidad, reglas de negocio y valores de configuración.
 
-## Estructura del Proyecto
-```
-challenge_10/
-├── transaccion-validator-java/     # Código base en Java (referencia)
-└── transaccion-validator-nodejs/   # Implementación en Node.js (a desarrollar)
-```
+> **IMPORTANTE**: Solo debes entregar el código de Node.js. El código Java ya está implementado y sirve como referencia.
+
 
 ## Prerrequisitos
 - [Node.js v18+](https://nodejs.org/en/download/)
@@ -28,11 +24,6 @@ javac -cp src/main/java -d target/classes src/main/java/com/bancoseguro/**/*.jav
 # Ejecutar
 java -cp target/classes com.bancoseguro.Main <id> <clienteId> <monto> <pais> <timestamp>
 ```
-
-
-# Ejecutar
-node src/main.js <id> <clienteId> <monto> <pais> <timestamp>
-
 
 ## Ejemplos de Uso
 
@@ -108,14 +99,14 @@ node src/main.js 1 123 15000 "  " 1751849926647
 - **Seguros**: Pacificolandia, Verdelandia
 
 ## Instrucciones de Implementación
-1. Analiza el código Java en `transaccion-validator-java/`
-2. Implementa la migración en `transaccion-validator-nodejs/`
+1. Analiza el código Java en challenge_10 (este código ya está implementado y sirve como referencia)
+2. **Implementa únicamente la migración en Node.js** - solo debes entregar el código de Node.js
 3. Mantén exactamente los mismos valores de configuración
 4. Asegúrate de que ambas versiones produzcan resultados idénticos
 5. Valida el manejo de errores en ambas implementaciones
 
+
 ## Importante
-- **NO modifiques** los valores de configuración del código Java original
 - **Mantén** los mismos mensajes de salida y validación
 - **Replica** la estructura de clases y responsabilidades en Node.js
 - **Valida** que ambas versiones manejen errores de forma consistente

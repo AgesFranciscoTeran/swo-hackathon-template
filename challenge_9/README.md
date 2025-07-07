@@ -34,27 +34,15 @@ No debe haber subconsultas correlacionadas innecesarias, funciones que impidan e
 Se valora el uso de GROUP BY, CTEs, funciones de ventana o técnicas modernas de SQL Server.
 
 ## Instrucciones de implementación del ejercicio
-Clona el repositorio del hackathon:
-
-git clone <URL_DEL_REPOSITORIO>
-cd challenge_9
-
-Revisa el archivo CreateDB.sql para analizar el modelo y las relaciones.
-
-Estudia las consultas originales en QueryDB.sql y comprende su propósito.
-
-Refactoriza y comenta tus versiones optimizadas en QueryOptDB.sql, incluyendo los casos de prueba.
-
-Realiza commit de tus cambios:
-
-git add QueryOptDB.sql
-git commit -m "Optimización y documentación de consultas SQL"
-git push
-
-Sube tu solución final siguiendo las instrucciones del hackathon.
-
-
-
+1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+2. Clona el repositorio asignado para tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+4. En la carpeta correspondiente al reto, revisa el archivo CreateDB.sql para analizar el modelo y las relaciones.
+5. Estudia las consultas originales en QueryDB.sql y comprende su propósito.
+6. Refactoriza y comenta tus versiones optimizadas en QueryOptDB.sql, incluyendo los casos de prueba.
+7. Realiza commit y push de tus cambios.
+8. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 9 para su revisión.
 
 ## Observaciones
 Se evaluará la claridad, justificación y eficiencia de las consultas optimizadas.
