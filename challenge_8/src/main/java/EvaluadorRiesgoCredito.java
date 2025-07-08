@@ -26,7 +26,7 @@ public class EvaluadorRiesgoCredito {
             ReglasNegocio.requiereRevisionPublicoGarantias(sectorPublico, aniosExp, garantias, scCrd) ||
             ReglasNegocio.requiereRevisionDigital(clienteOnline, tieneInversiones, scCrd, antigProd, deudasAct)
         ) {
-            return "Requiere Revisión Manual";
+            return "Requiere Revision Manual";
         }
 
         return "Rechazado";
