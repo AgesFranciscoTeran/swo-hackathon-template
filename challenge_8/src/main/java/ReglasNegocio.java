@@ -17,7 +17,7 @@ public class ReglasNegocio {
             && !tieneDeudas
             && ingresos >= 3900
             && monto <= ingresos * 10
-            && (pais.equals("Colombia") || pais.equals("México"));
+            && (pais.equals("Colombia") || pais.equals("Mexico"));
     }
 
     public static boolean esClientePublicoConGarantias(boolean garantias, boolean esPublico, double ingresos, int experiencia, boolean tieneDeudas, int score, int antiguedadProducto) {
