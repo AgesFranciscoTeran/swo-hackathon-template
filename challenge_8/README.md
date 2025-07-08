@@ -45,7 +45,9 @@ swo-hackaton-challenge-8/
 ### Criterios de aceptación técnicos
 - El código debe compilar sin errores.
 - La lógica debe utilizar eficientemente los métodos ya implementados en `ReglasNegocio.java`.
-- No debe haber condicionales anidados innecesarios en `EvaluadorRiesgoCredito.java`.
+- Se deben matener las impresiones en consola como está actualmente.
+- La lógica debe estar correctamente separada entre las dos clases.
+- El código de todas las clases java debe cumplir con las mejores prácticas definidas en el estándar de código limpio.
 
 ### Ejemplo de ejecución
 Compila y ejecuta el programa desde la carpeta `src/main/java/`:

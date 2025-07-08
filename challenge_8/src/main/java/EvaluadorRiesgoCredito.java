@@ -1,30 +1,30 @@
 public class EvaluadorRiesgoCredito {
 
     public String evaluarSolicitud(
-        double ingMes, int edad, boolean histCred, int scCrd, boolean deudasAct,
-        double monto, String tCliente, String nivelEdu, int aniosExp,
-        String pais, boolean cumplePLD, int antigProd, boolean garantias,
-        boolean sectorPublico, boolean clienteOnline, boolean tieneInversiones
+        double arg01, int arg02, boolean arg03, int arg04, boolean arg05,
+        double arg06, String arg07, String arg08, int arg09,
+        String arg10, boolean arg11, int arg12, boolean arg13,
+        boolean arg14, boolean arg15, boolean arg16
     ) {
-        if (!cumplePLD) {
+        if (!arg11) {
             return "Rechazado";
         }
 
         if (
-            ReglasNegocio.esClienteVipElegible(tCliente, scCrd, deudasAct, ingMes, antigProd) ||
-            ReglasNegocio.esClientePremiumElegible(tCliente, edad, histCred, scCrd, deudasAct, ingMes, monto, pais) ||
-            ReglasNegocio.esClientePublicoConGarantias(garantias, sectorPublico, ingMes, aniosExp, deudasAct, scCrd, antigProd) ||
-            ReglasNegocio.esClienteDigitalTop(clienteOnline, histCred, scCrd, ingMes, antigProd, deudasAct, tieneInversiones) ||
-            ReglasNegocio.esClienteEducadoConPerfil(nivelEdu, ingMes, edad, scCrd, antigProd)
+            ReglasNegocio.esClienteVipElegible(arg07, arg04, arg05, arg01, arg12) ||
+            ReglasNegocio.esClientePremiumElegible(arg07, arg02, arg03, arg04, arg05, arg01, arg06, arg10) ||
+            ReglasNegocio.esClientePublicoConGarantias(arg13, arg14, arg01, arg09, arg05, arg04, arg12) ||
+            ReglasNegocio.esClienteDigitalTop(arg15, arg03, arg04, arg01, arg12, arg05, arg16) ||
+            ReglasNegocio.esClienteEducadoConPerfil(arg08, arg01, arg02, arg04, arg12)
         ) {
             return "Aprobado";
         }
 
         if (
-            ReglasNegocio.requiereRevisionPorScoreYIngresos(scCrd, ingMes, deudasAct) ||
-            ReglasNegocio.requiereRevisionPorJuventud(tCliente, edad, histCred, monto, ingMes) ||
-            ReglasNegocio.requiereRevisionPublicoGarantias(sectorPublico, aniosExp, garantias, scCrd) ||
-            ReglasNegocio.requiereRevisionDigital(clienteOnline, tieneInversiones, scCrd, antigProd, deudasAct)
+            ReglasNegocio.requiereRevisionPorScoreYIngresos(arg04, arg01, arg05) ||
+            ReglasNegocio.requiereRevisionPorJuventud(arg07, arg02, arg03, arg06, arg01) ||
+            ReglasNegocio.requiereRevisionPublicoGarantias(arg14, arg09, arg13, arg04) ||
+            ReglasNegocio.requiereRevisionDigital(arg15, arg16, arg04, arg12, arg05)
         ) {
             return "Requiere Revision Manual";
         }
