@@ -22,16 +22,15 @@ challenge_9/
 
 ## Criterios de aceptación
 
-El archivo QueryOptDB.sql debe contener versiones optimizadas y comentadas de todas las consultas originales.
-
-Cada consulta debe mantener el resultado lógico esperado y su intención original.
+- El archivo QueryOptDB.sql debe contener versiones optimizadas y comentadas de todas las consultas originales, garantizando que el código cuente con buenas prácticas de codificación de consultas en SQL para que no afecte su rendimiento y/o escalabilidad.
+- Cada consulta debe mantener el resultado lógico esperado y su intención original.
 
 ### Criterios de aceptación técnicos
-El archivo de entrega debe estar comentado y organizado (usa comentarios -- para justificar cambios).
-
-No debe haber subconsultas correlacionadas innecesarias, funciones que impidan el uso de índices ni JOINs irrelevantes.
-
-Se valora el uso de GROUP BY, CTEs, funciones de ventana o técnicas modernas de SQL Server.
+- Las nuevas consultas deben poderse ejecutar en un motor de base de datos SQL Server.
+- El archivo de entrega debe estar comentado y organizado (usa comentarios -- para justificar cambios).
+- No debe haber subconsultas correlacionadas innecesarias, funciones que impidan el uso de índices ni JOINs irrelevantes.
+- Se valora el uso de GROUP BY, CTEs, funciones de ventana o técnicas modernas de SQL Server.
+- Verifica y soluciona cualquier otra mala práctica en la codificación de las consultas que afecte su rendimiento y mantenibilidad.
 
 ## Instrucciones de implementación del ejercicio
 1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
