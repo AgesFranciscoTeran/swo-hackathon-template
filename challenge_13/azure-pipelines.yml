@@ -1,0 +1,83 @@
+# Azure Pipelines CI para BankAccountApp
+# Este pipeline compila, prueba, analiza y publica artefactos de una app .NET 8
+
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  buildConfiguration: 'Release'
+  solution: '**/*.sln'
+  project: 'BankAccountApp/BankAccountApp.csproj'
+  testProject: 'BankAccountApp.Tests/BankAccountApp.Tests.csproj'
+
+stages:
+  - stage: Restore
+    displayName: 'Restaurar paquetes'
+    jobs:
+      - job: Restore
+        steps:
+          - task: UseDotNet@2
+            inputs:
+              packageType: 'sdk'
+              version: '8.x'
+          - script: dotnet restore $(solution)
+            displayName: 'dotnet restore'
+
+  - stage: Build
+    displayName: 'Compilar solución'
+    dependsOn: Restore
+    jobs:
+      - job: Build
+        steps:
+          - script: dotnet build $(solution) --configuration $(buildConfiguration) --no-restore
+            displayName: 'dotnet build'
+
+  - stage: Test
+    displayName: 'Ejecutar pruebas unitarias'
+    dependsOn: Build
+    jobs:
+      - job: Test
+        steps:
+          - script: dotnet test $(testProject) --configuration $(buildConfiguration) --no-build --collect:"XPlat Code Coverage"
+            displayName: 'dotnet test'
+
+  - stage: SonarCloud
+    displayName: 'Análisis estático con SonarCloud'
+    dependsOn: Test
+    condition: and(succeeded(), eq(variables['Build.SourceBranchName'], 'main'))
+    jobs:
+      - job: SonarCloud
+        steps:
+          - task: SonarCloudPrepare@1
+            inputs:
+              SonarCloud: 'SonarCloudServiceConnection' # Debe estar configurado en el entorno
+              organization: '<SONARCLOUD_ORG>'
+              scannerMode: 'MSBuild'
+              projectKey: '<SONARCLOUD_PROJECT_KEY>'
+              projectName: 'BankAccountApp'
+              extraProperties: |
+                sonar.cs.opencover.reportsPaths=$(Agent.TempDirectory)/**/coverage.opencover.xml
+                sonar.token=$(SONAR_TOKEN)
+          - script: dotnet build $(solution) --configuration $(buildConfiguration) --no-restore
+            displayName: 'dotnet build (Sonar)'
+          - script: dotnet test $(testProject) --configuration $(buildConfiguration) --no-build --collect:"XPlat Code Coverage"
+            displayName: 'dotnet test (Sonar)'
+          - task: SonarCloudAnalyze@1
+          - task: SonarCloudPublish@1
+            inputs:
+              pollingTimeoutSec: '300'
+
+  - stage: Publish
+    displayName: 'Publicar artefactos'
+    dependsOn: [Build, Test, SonarCloud]
+    jobs:
+      - job: Publish
+        steps:
+          - script: dotnet publish $(project) --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)
+            displayName: 'dotnet publish'
+          - publish: $(Build.ArtifactStagingDirectory)
+            artifact: drop
+            displayName: 'Publicar artefacto drop'

@@ -48,6 +48,8 @@ Se evaluará la claridad, justificación y eficiencia de las consultas optimizad
 
 Puedes documentar cualquier ambigüedad o detalle relevante encontrado en el modelo o en las consultas originales.
 
+
+
 ## Recursos Útiles
 
 Optimización de consultas SQL en SQL Server
