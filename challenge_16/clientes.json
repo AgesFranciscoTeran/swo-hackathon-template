@@ -1,0 +1,142 @@
+[
+  {
+    "nombre": "Juan Perez",
+    "monto_total": 10000,
+    "pagos": [2000, 3000, 4000],
+    "fecha_inicio": "2023-01-15",
+    "tasa_interes": 0.15
+  },
+  {
+    "nombre": "Ana Gómez",
+    "monto_total": 5000,
+    "pagos": [1000],
+    "fecha_inicio": "2024-11-01",
+    "tasa_interes": 0.18
+  },
+  {
+    "nombre": "Carlos Malo",
+    "monto_total": 7000,
+    "pagos": [],
+    "fecha_inicio": "2023/06/01",
+    "tasa_interes": 0.12
+  },
+  {
+    "nombre": "Mónica Díaz",
+    "monto_total": "once mil",
+    "pagos": [1000, 1000],
+    "fecha_inicio": "2023-03-01",
+    "tasa_interes": 0.1
+  },
+  {
+    "nombre": "Esteban Ríos",
+    "monto_total": 8000,
+    "pagos": [5000, 1000],
+    "fecha_inicio": "2022-12-01",
+    "tasa_interes": 0.13
+  },
+  {
+    "nombre": "Laura Vargas",
+    "monto_total": 3000,
+    "pagos": [2500],
+    "fecha_inicio": "2024-05-01",
+    "tasa_interes": 0.14
+  },
+  {
+    "nombre": "Pedro Casas",
+    "monto_total": 10000,
+    "pagos": [],
+    "fecha_inicio": "2024-01-01",
+    "tasa_interes": 0.16
+  },
+  {
+    "nombre": "Angela Mora",
+    "monto_total": 9000,
+    "pagos": [1000, 2000, 3000],
+    "fecha_inicio": "2023-06-15",
+    "tasa_interes": 0.17
+  },
+  {
+    "nombre": "Miguel Torres",
+    "monto_total": 12000,
+    "pagos": [6000],
+    "fecha_inicio": "2022-01-01",
+    "tasa_interes": 0.11
+  },
+  {
+    "nombre": "Sofía León",
+    "monto_total": 4000,
+    "pagos": [4000],
+    "fecha_inicio": "2023-12-01",
+    "tasa_interes": 0.15
+  },
+  {
+    "nombre": "Diego Ramírez",
+    "monto_total": 10000,
+    "pagos": [1000, "mil"],
+    "fecha_inicio": "2023-01-01",
+    "tasa_interes": 0.1
+  },
+  {
+    "nombre": "Tatiana Useche",
+    "monto_total": 5000,
+    "pagos": [4000],
+    "fecha_inicio": "2023-08-01",
+    "tasa_interes": 0.09
+  },
+  {
+    "nombre": "Luis Herrera",
+    "monto_total": 7500,
+    "pagos": [7500],
+    "fecha_inicio": "2023-02-15",
+    "tasa_interes": 0.2
+  },
+  {
+    "nombre": "Camila Suárez",
+    "monto_total": 10000,
+    "pagos": [500, 500, 500],
+    "fecha_inicio": "2022-11-01",
+    "tasa_interes": 0.25
+  },
+  {
+    "nombre": "Oscar Mejía",
+    "monto_total": 8500,
+    "pagos": [],
+    "fecha_inicio": "fecha-incorrecta",
+    "tasa_interes": 0.12
+  },
+  {
+    "nombre": "Natalia Gómez",
+    "monto_total": 2000,
+    "pagos": [1000, 500],
+    "fecha_inicio": "2023-04-15",
+    "tasa_interes": 0.13
+  },
+  {
+    "nombre": "Ricardo Peña",
+    "monto_total": 9000,
+    "pagos": [3000, 3000],
+    "fecha_inicio": "2023-05-05",
+    "tasa_interes": 0.14
+  },
+  {
+    "nombre": "Diana Salas",
+    "monto_total": 10000,
+    "pagos": [5000, 5000],
+    "fecha_inicio": "2023-06-01",
+    "tasa_interes": 0.16
+  },
+  {
+    "nombre": "Mauricio Niño",
+    "monto_total": 6000,
+    "pagos": [6000],
+    "fecha_inicio": "2024-01-01",
+    "tasa_interes": 0.2
+  },
+  {
+    "nombre": "Valeria Ortiz",
+    "monto_total": 4500,
+    "pagos": [1000, 1000, 1000],
+    "fecha_inicio": "2023-10-10",
+    "tasa_interes": 0.18
+  }
+]
