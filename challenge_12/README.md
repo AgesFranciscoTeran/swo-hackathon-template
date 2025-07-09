@@ -2,9 +2,9 @@
 
 ## Descripción
 
-El Banco **Financiera Ágil S.A.** busca modernizar el despliegue de su aplicación web bancaria utilizando infraestructura como código (Terraform) y mejores prácticas de seguridad y modularidad.  
-Tu misión es definir la infraestructura necesaria para esta solución en Azure, **sin necesidad de desplegarla** realmente.  
-La aplicación debe estar diseñada para ejecutarse desde una imagen de contenedor almacenada en un **Azure Container Registry (ACR)** privado, y la solución debe garantizar la protección de credenciales y secretos.
+El Banco **Financiera Ágil S.A.** busca modernizar el despliegue de su aplicación web bancaria utilizando infraestructura como código (Terraform) y mejores prácticas de seguridad y modularidad. Tu misión es definir la infraestructura necesaria para esta solución en Azure, **sin necesidad de desplegarla** realmente.
+
+A continuación, podrás ver la arquitectura de despliegue diseñada para tal fin. Se espera que la aplicación debe estar diseñada para ejecutarse desde una imagen de contenedor almacenada en un **Azure Container Registry (ACR)** privado, y la solución debe garantizar la protección de credenciales y secretos.
 
 
 ## Prerrequisitos
@@ -26,7 +26,6 @@ swo-hackaton-challenge-12/
 │ └── arquitectura_banca.png
 ```
 
-
 ## Criterios de aceptación
 
  1. Tu código debe cubrir al menos los siguientes recursos de Azure:
@@ -39,7 +38,7 @@ swo-hackaton-challenge-12/
     - Azure Blob Storage
     - Application Gateway
     - Azure Monitor
-2.  El App Service debe estar configurado para usar una imagen de ACR.
+2. El App Service debe estar configurado para usar una imagen de ACR.
 3. Todos los secretos y cadenas de conexión deben ir en Azure Key Vault.
 4. Debe incluir recursos para monitoreo.
 5. El acceso debe estar pensado para Application Gateway y autenticación con Azure AD.
