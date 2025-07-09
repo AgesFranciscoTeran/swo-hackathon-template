@@ -6,6 +6,7 @@ El Banco **Financiera Ágil S.A.** busca modernizar el despliegue de su aplicaci
 
 A continuación, podrás ver la arquitectura de despliegue diseñada para tal fin. Se espera que la aplicación debe estar diseñada para ejecutarse desde una imagen de contenedor almacenada en un **Azure Container Registry (ACR)** privado, y la solución debe garantizar la protección de credenciales y secretos.
 
+![Arquitectura Banca](https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template/blob/main/challenge_12/docs/arquitectura_banca.png)
 
 ## Prerrequisitos
 - Sistema operativo: Windows, macOS o Linux.
