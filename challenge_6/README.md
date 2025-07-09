@@ -68,7 +68,7 @@ La salida debe mostrar que todas las pruebas pasan correctamente o indicar los e
    ```
 6. Implementa al menos ocho pruebas unitarias usando JUnit 5, cubriendo los escenarios solicitados.
 7. Ejecuta las pruebas localmente para validar que todo funcione.
-8. Genera el reporte de cobertura usando Jacoco.
+8. Genera el reporte de cobertura .csv usando Jacoco.
 9. Realiza commit y push de tus cambios.
 10. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 6 para su revisión.
 
