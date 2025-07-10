@@ -63,7 +63,7 @@ swo-hackaton-challenge-12/
 2. Clona el repositorio asignado para tu equipo.
 3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
 
-## Ejemplo de validacion
+## Ejemplo de validación
 
 ```bash
 # Inicializa el entorno de Terraform
@@ -80,9 +80,9 @@ tflint
 
 ```
 
-## Instrucciones de implementacion del proyecto 
+## Instrucciones de implementación del proyecto 
 1. Si ya tienes el repositorio base, omite los pasos 1 a 3. Si no, clona el repositorio:
-https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
 
 2. Clona el repositorio asignado para tu equipo.
 
