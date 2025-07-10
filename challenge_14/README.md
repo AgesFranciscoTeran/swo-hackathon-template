@@ -21,30 +21,32 @@ Actualmente, se necesita generar la documentación técnica detallada para esta 
 
 ## Criterios de aceptación
 
-- La documentación debe estar en el repositorio o entregarse como archivo separado
+- La documentación debe estar en el repositorio o entregarse como archivo separado:
+```
 challenge_14
 ├── README.md
 └── documentacion_api.yaml
+```
 
 - El archivo debe validar correctamente con herramientas como Swagger Editor.
 
 - Debe presentarse de manera estructurada y profesional.
 
 ### Criterios de aceptación técnicos
-- los endpoints que deben ser documentados: 
-    (creacion de turnos)
-    (consultar disponibilidad)
-    (cancelar turno)
-    (reprogramar turno)
-    (registrar llegada del cliente)
+- Los endpoints que deben ser documentados: 
+    - Creación de turnos
+    - Consultar disponibilidad
+    - Cancelar turno
+    - Reprogramar turno
+    - Registrar llegada del cliente
 
-- la documentacion de los endpoints debe incluir
-    Descripción de la operación.
-    Parámetros (query, path, body) con sus tipos y ejemplos.
-    Ejemplo de request y response con estructura JSON.
-    Códigos de respuesta HTTP esperados (200, 400, 404, 500).
+- La documentación de los endpoints debe incluir:
+    - Descripción de la operación.
+    - Parámetros (query, path, body) con sus tipos y ejemplos.
+    - Ejemplo de request y response con estructura JSON.
+    - Códigos de respuesta HTTP esperados (200, 400, 404, 500).
 
-- la documentacion debe incluir el esquema de autenticacion apikey
+- La documentación debe incluir el esquema de autenticación apikey.
 - El archivo debe cumplir con el estándar OpenAPI 3.0 sin errores de validación.
 
 ## Observaciones

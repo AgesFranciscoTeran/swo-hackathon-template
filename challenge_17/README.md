@@ -1,4 +1,4 @@
-# Reto 17: Resolver Preguntas Código
+# Reto 17: Resolver Preguntas sobre Código
 
 ## Descripción
 
@@ -9,7 +9,7 @@ El objetivo de este ejercicio es analizar el aplicativo open source disponible e
 
 ## Estructura del proyecto
 ```
-swo-hackaton-challenge-17/
+challenge-17/
 ├── eShop/                # Carpeta donde se debe clonar el repositorio eShop
 │   ├── src/
 │   ├── tests/
