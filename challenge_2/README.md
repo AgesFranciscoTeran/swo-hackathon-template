@@ -4,11 +4,11 @@
 
 ## Descripción
 
-Debes crear una aplicacion sencilla en Node.js y actúe como un "robot analizador de sentimientos". Esta aplicación debe recibir frases escritas por usuarios y, utilizando el modelo GPT-4.1 a través de la API de GitHub Models, determinar si la frase expresa un sentimiento positivo, negativo o neutral.
+Debes crear una aplicación sencilla en Node.js que actúe como un "robot analizador de sentimientos". Esta aplicación debe recibir frases escritas por usuarios y, utilizando el modelo GPT-4.1 a través de la API de GitHub Models, determinar si la frase expresa un sentimiento positivo, negativo o neutral.
 
 El objetivo es experimentar la integración de modelos de lenguaje avanzados dentro de una aplicación práctica, simulando cómo las empresas pueden automatizar el análisis de opiniones en redes sociales, encuestas o reseñas de productos.
 
-## Prerequisitos
+## Prerrequisitos
 
 - [Node.js v22](https://nodejs.org/en/download)
 - [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
@@ -62,12 +62,12 @@ npm start -- TU_API_KEY "Tu mensaje aquí"
 1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
 2. Clona el repositorio asignado para tu equipo.
-3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
-4. En la carpeta correspondiente al reto, crea un archivo llamado `index.js` en la raíz del proyecto .
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asignado a tu equipo.
+4. En la carpeta correspondiente al reto, crea un archivo llamado `index.js` en la raíz del proyecto.
 5. Instala los paquetes necesarios para implementar la aplicación.
-. Implementa la aplicación y asegúrate de cumplir con los criterios funcionales y técnicos descritos.
+6. Implementa la aplicación y asegúrate de cumplir con los criterios funcionales y técnicos descritos.
 7. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución.
-8. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 2 para su revisión.
+8. Finalmente, en el aplicativo de hackathon, envía el ejercicio correspondiente a challenge 2 para su revisión.
 
 ## Notas importantes
 - El API KEY **debe** ser generado desde [GitHub Models](https://github.com/marketplace/models) y tener permisos "models:read".
