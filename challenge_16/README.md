@@ -29,10 +29,10 @@ challenge_16/
 
 ### Ejemplo de ejecución
 ```
-Cliente         | Estado     | Pagado   | Interés   | Deuda Total  | Días
+Cliente         | Estado     | Pagado   | Interes   | Deuda Total  | Días
 ----------------------------------------------------------------------
 Juan Perez      | SALDADO    | 9000.00  | 1234.56   | 11234.56     | 540
-Ana Gómez       | EN MORA    | 1000.00  | 456.78    | 5456.78      | 245
+Ana Gomez       | EN MORA    | 1000.00  | 456.78    | 5456.78      | 245
 Carlos Malo     | SIN PAGOS  | 0.00     | 2345.67   | 9345.67      | 398
 ```
 
