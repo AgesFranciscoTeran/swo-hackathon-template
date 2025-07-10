@@ -5,7 +5,7 @@
 
 Debes crear una aplicación backend sencilla en C# utilizando ASP.NET Core Web API para gestionar una lista de tareas. La API debe exponer endpoints REST para crear, listar, completar y eliminar tareas, almacenando los datos en memoria (no persistente). El objetivo es practicar el diseño de servicios REST y la validación de datos usando pruebas con Postman.
 
-## Prerequisitos
+## Prerrequisitos
 
 - [.NET SDK 8.0](https://versionsof.net/core/8.0/)
 - Sistema operativo: Windows, macOS o Linux
@@ -36,7 +36,7 @@ challenge_3/
    - `DELETE /tareas/{id}`: Eliminar una tarea por su ID.
 2. El almacenamiento de tareas debe ser en memoria (no persistente).
 3. Todas las respuestas deben tener formato JSON y usar los códigos de estado HTTP estándar.
-4. El modelo de tarea debe incluir: id, titulo, descripcion, completada (bool).
+4. El modelo de tarea debe incluir: id, título, descripción, completada (bool).
 5. El código debe estar en la carpeta `challenge_3` y compilar correctamente.
 
 ### Criterios de Aceptación Técnicos
@@ -67,13 +67,13 @@ http://localhost:5000
 1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
 2. Clona el repositorio asignado para tu equipo.
-3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asignado a tu equipo.
 4. En la carpeta correspondiente al reto, implementa los endpoints y la lógica de almacenamiento en memoria según los criterios funcionales.
 5. Asegúrate de que la API use el puerto 5000 por HTTP.
 6. Prueba todos los endpoints usando Postman.
 7. Asegúrate de cumplir con los criterios funcionales y técnicos descritos arriba.
 8. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución.
-7. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 3 para su revisión.
+9. Finalmente, en el aplicativo de hackathon, envía el ejercicio correspondiente a challenge 3 para su revisión.
 
 ## Notas importantes
 - El almacenamiento de tareas es en memoria (no persistente).
