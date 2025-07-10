@@ -5,7 +5,7 @@
 
 Debes crear una aplicación sencilla en Node.js que procese información de empleados almacenada en un archivo empleados.json. El programa debe filtrar empleados activos del departamento IT, agruparlos por ciudad y mostrar la información en consola. El objetivo es practicar el manejo de archivos JSON, filtrado y agrupación de datos en memoria usando JavaScript.
 
-## Prerequisitos
+## Prerrequisitos
 
 - [Node.js v22](https://nodejs.org/en/download)
 - [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
@@ -37,7 +37,7 @@ challenge_4/
 ### Criterios de Aceptación Técnicos
 - El programa debe estar implementado en Node.js usando JavaScript.
 - El código fuente debe estar en el repositorio GitHub suministrado en una carpeta con nombre _challenge_4_.
-- El archivo principal debe llamarse `Index.js` y estar en la raíz de la carpeta.
+- El archivo principal debe llamarse `index.js` y estar en la raíz de la carpeta.
 - El archivo empleados.json debe estar presente en la raíz del proyecto.
 - El archivo package.json debe incluir el script "start" para ejecutar el programa con `npm start`.
 - El código fuente debe ejecutarse correctamente y cumplir todos los criterios de aceptación funcionales.
@@ -56,12 +56,12 @@ npm start
 1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
 2. Clona el repositorio asignado para tu equipo.
-3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asignado a tu equipo.
 4. En la carpeta correspondiente al reto, crea el archivo empleados.json en la raíz del proyecto con la estructura y datos de ejemplo proporcionados.
-5. Implementa la lógica para leer, filtrar y agrupar los empleados según los criterios funcionales en el archivo `Index.js`.
+5. Implementa la lógica para leer, filtrar y agrupar los empleados según los criterios funcionales en el archivo `index.js`.
 6. Asegúrate de cumplir con los criterios funcionales y técnicos descritos arriba.
 7. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución.
-8. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 4 para su revisión.
+8. Finalmente, en el aplicativo de hackathon, envía el ejercicio correspondiente a challenge 4 para su revisión.
 
 ## Notas importantes
 - El archivo empleados.json debe estar correctamente formado y en la raíz del proyecto.
@@ -79,7 +79,7 @@ npm start
 - [Manejo de archivos en Node.js](https://nodejs.dev/learn/leer-y-escribir-archivos-json-en-nodejs)
 - [Curso básico de Node.js](https://www.freecodecamp.org/learn/back-end-development-and-apis/introduction-to-nodejs)
 
-### JSON 
+### Datos de Ejemplo para empleados.json
 
 ```json
 [
