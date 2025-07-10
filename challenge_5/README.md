@@ -25,15 +25,15 @@ README.md
 - Las pruebas deben ejecutarse correctamente usando el módulo `unittest` de Python.
 
 ### Pruebas mínimas requeridas
-  - `test_sumar_positivos`: prueba la función sumar con dos números positivos.
-  - `test_potencia_positiva`: prueba la función potencia con base y exponente positivos.
-  - `test_promedio_lista`: prueba la función promedio con una lista de números.
-  - `test_dividir_por_cero`: prueba que dividir por cero lanza ValueError.
-  - `test_raiz_cuadrada_negativo`: prueba que la raíz cuadrada de un número negativo lanza ValueError.
-  - `test_promedio_lista_vacia`: prueba que el promedio de una lista vacía lanza ValueError.
-  - `test_modulo_borde`: prueba la función modulo con divisor 1.
-  - `test_multiplicar_decimales`: prueba la función multiplicar con decimales.
-  - `test_potencia_decimal_negativo`: prueba la función potencia con base negativa y exponente par.
+- `test_sumar_positivos`: prueba la función sumar con dos números positivos.
+- `test_potencia_positiva`: prueba la función potencia con base y exponente positivos.
+- `test_promedio_lista`: prueba la función promedio con una lista de números.
+- `test_dividir_por_cero`: prueba que dividir por cero lanza ValueError.
+- `test_raiz_cuadrada_negativo`: prueba que la raíz cuadrada de un número negativo lanza ValueError.
+- `test_promedio_lista_vacia`: prueba que el promedio de una lista vacía lanza ValueError.
+- `test_modulo_borde`: prueba la función módulo con divisor 1.
+- `test_multiplicar_decimales`: prueba la función multiplicar con decimales.
+- `test_potencia_decimal_negativo`: prueba la función potencia con base negativa y exponente par.
 
 ### Criterios de aceptación técnicos
 - El archivo `test_calculadora.py` debe ser creado por el usuario y contener todas las pruebas unitarias solicitadas.
@@ -52,13 +52,13 @@ La salida debe mostrar que todas las pruebas pasan correctamente o indicar los e
 1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
 2. Clona el repositorio asignado para tu equipo.
-3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asignado a tu equipo.
 4. Ingresa a la carpeta `challenge_5` del repositorio clonado.
 5. Crea el archivo `test_calculadora.py` en la raíz del proyecto.
 6. Implementa los tests unitarios solicitados.
 7. Ejecuta las pruebas localmente para validar que todo funcione.
-8. Realiza commit y push de tus cambios:
-9. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 5 para su revisión.
+8. Realiza commit y push de tus cambios al repositorio.
+9. Finalmente, en el aplicativo de hackathon, envía el ejercicio correspondiente a challenge 5 para su revisión.
 
 ## Observaciones
 - Valida que las funciones manejen correctamente los errores y casos extremos.
