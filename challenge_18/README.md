@@ -15,7 +15,7 @@ En este reto utilizarás la herramienta K6 para crear un script de prueba de car
 ## Estructura del proyecto
 ```
 swo-hackaton-challenge-18/
-├── api-test.js
+├── test.js
 ├── README.md
 ```  
   
