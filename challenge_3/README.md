@@ -3,7 +3,7 @@
 
 ## Descripción
 
-Debes crear una aplicación backend sencilla en C# utilizando ASP.NET Core Web API para gestionar una lista de tareas. La API debe exponer endpoints REST para crear, listar, completar y eliminar tareas, almacenando los datos en memoria (no persistente). El objetivo es practicar el diseño de servicios REST y la validación de datos usando pruebas con Postman.
+Debes crear una aplicación backend sencilla en C# utilizando ASP.NET Core Web API para gestionar una lista de tareas. La API debe exponer endpoints REST para crear, listar, completar y eliminar tareas, almacenando los datos en memoria (no persistente). El objetivo es practicar el diseño de servicios REST y la validación de datos usando pruebas con Postman o rest client(Extension VScode).
 
 ## Prerrequisitos
 
@@ -70,7 +70,7 @@ http://localhost:5000
 3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asignado a tu equipo.
 4. En la carpeta correspondiente al reto, implementa los endpoints y la lógica de almacenamiento en memoria según los criterios funcionales.
 5. Asegúrate de que la API use el puerto 5000 por HTTP.
-6. Prueba todos los endpoints usando Postman.
+6. Prueba todos los endpoints usando Postman o rest client(extension VSCode).
 7. Asegúrate de cumplir con los criterios funcionales y técnicos descritos arriba.
 8. Una vez finalizado, guarda los cambios y realiza commit y push de tu solución.
 9. Finalmente, en el aplicativo de hackathon, envía el ejercicio correspondiente a challenge 3 para su revisión.

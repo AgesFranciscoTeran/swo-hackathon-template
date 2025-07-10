@@ -13,49 +13,61 @@ El objetivo es experimentar la integración de modelos de lenguaje avanzados den
 - [Node.js v22](https://nodejs.org/en/download)
 - [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - Sistema operativo: Windows, macOS o Linux.
-- API KEY válida generada desde [GitHub Models](https://github.com/marketplace/models) con permisos "models:read" (no usar claves de OpenAI ni de otros proveedores).
+- PAT válida generada desde [GitHub Models](https://github.com/marketplace/models) con permisos "admin:public_key" los participantes haran uso de este PAT para probar el correcto funcionamiento del programa
 - El modelo a utilizar es "openai/gpt-4.1".
+- para el correcto funcionamiento del challenge debes hacer uso de @azure-rest/ai-inference que es un SDK oficial de Microsoft para Node.js que permite consumir servicios de inteligencia artificial (IA) de Azure y de GitHub Models usando una interfaz REST moderna y sencilla. usa (npm install @azure-rest/ai-inference @azure/core-auth node-fetch)
 
 ## Estructura del Proyecto
 
 ```
 Sentimientos-Bot/
+
 ├── index.js
 ├── package.json
+├── package-lock.json
+├── node_modules    
 └── ...
 ```
 
 ## Criterios de aceptación
 
-1. La aplicación debe recibir el API KEY y el mensaje a analizar como argumentos desde la línea de comandos.
-2. Si no se proporciona el API KEY, debe mostrar el mensaje:
-   - `Error: No se ha detectado un API Key de conexión a GitHub Models.`
-3. Si no se proporciona el mensaje a analizar, debe mostrar el mensaje:
-   - `Error: No se ha detectado un mensaje para procesar.`
-4. Si el API KEY es inválido, debe mostrar el mensaje:
-   - `Error: No es posible consumir los servicios de GitHub Models con el KEY suministrado.`
-5. Si la petición es exitosa, debe mostrar el mensaje:
+1. La aplicación debe aceptar argumentos por línea de comandos:
+   - GitHub Models: `<PAT> "mensaje"`                 (si se hace uso de github models solo se deben enviar dos parametros)
+   - Azure OpenAI: `<API_KEY> "mensaje" <ENDPOINT>`   (si se hace uso de Azure OpenAI se deben utilizar 3 parametros)
+2. Si falta algún argumento, debe mostrar el error correspondiente.
+3. Si el token es inválido, debe mostrar:
+   - `Error: No es posible consumir los servicios con el KEY suministrado.`
+4. Si la petición es exitosa, debe mostrar:
    - `Sentimiento detectado: <positivo|negativo|neutral>`
-6. El modelo utilizado debe ser "openai/gpt-4.1".
-7. El código debe estar en un archivo llamado `index.js` en la raíz de la carpeta del proyecto.
+5. El modelo utilizado debe ser "openai/gpt-4.1".
+6. El código debe estar en `index.js` en la raíz de la carpeta.
 
 ### Criterios de Aceptación Técnicos
 - El programa debe estar implementado en Node.js.
-- El código fuente debe estar en el repositorio GitHub suministrado en una carpeta con nombre _challenge_2_.
+- El código fuente debe estar en el repositorio GitHub suministrado en una carpeta con nombre _challenge_2.
 - El archivo principal debe llamarse `index.js` y estar en la raíz de la carpeta.
 - La ejecución del programa debe permitir pasar el API KEY y el mensaje como argumentos desde la línea de comandos.
 - El código fuente debe ejecutarse correctamente y cumplir todos los criterios de aceptación funcionales.
 
-### Ejemplo de Ejecución con Parámetro de Línea de Comandos
+## Ejemplo de Ejecución
 
-Ejecuta la aplicación desde la terminal, dentro de la carpeta del proyecto:
-
+### GitHub Models (SDK, PAT con admin:public_key)
 ```sh
-npm start -- TU_API_KEY "Tu mensaje aquí"
+npm start -- ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx "Hoy es un gran día"
 ```
+- El primer argumento es el PAT clásico de GitHub con scope `admin:public_key`.
+- El segundo argumento es el mensaje a analizar.
+- El endpoint y modelo se configuran automáticamente en el script.
 
-- Reemplaza `TU_API_KEY` por el key generado desde GitHub Models.
-- Reemplaza `"Tu mensaje aquí"` por la frase que deseas analizar.
+### Azure OpenAI (API key y endpoint)
+```sh
+npm start -- <APIKEY> "Hoy es un gran día" <Endpoint>
+```
+- El primer argumento es el API key de Azure OpenAI.
+- El segundo argumento es el mensaje a analizar.
+- El tercer argumento es el endpoint completo de tu deployment en Azure.
+
+El programa debe aceptar los parámetros necesarios para funcionar tanto con Azure OpenAI como con GitHub Models. Sin embargo, para las pruebas internas de los equipos, únicamente se utilizará GitHub Models.
 
 ## Instrucciones de implementación del ejercicio
 
@@ -70,13 +82,29 @@ npm start -- TU_API_KEY "Tu mensaje aquí"
 8. Finalmente, en el aplicativo de hackathon, envía el ejercicio correspondiente a challenge 2 para su revisión.
 
 ## Notas importantes
-- El API KEY **debe** ser generado desde [GitHub Models](https://github.com/marketplace/models) y tener permisos "models:read".
+- El Personal Access Token (PAT) **debe** ser generado desde [GitHub Models](https://github.com/marketplace/models) y tener permisos "admin:public_key".
 - El API KEY se pasa siempre como primer argumento al ejecutar el script, seguido del mensaje a analizar.
+- el programa debe permitir ingresar dos casos:
+Envio de PAT con mensaje (haciendo uso de github models)
+```
+sh
+npm start -- PAT "Tu mensaje aquí"
+```
+Envio de APIKEY con mensaje y endopoint (haciendo uso de azure openAI), 
 - No es necesario el archivo `.env` para la API KEY, ya que ahora se recibe por argumento.
 - Si no se proporcionan ambos argumentos, el script mostrará un error y terminará.
 
 ## Observaciones
-- Se debe validar que el API KEY no se encuentre vacío, pues el equipo que presente el ejercicio debe realizar sus correspondientes pruebas.
+- el programa debe realizar la validacion de los siguientes errores:
+- Si falta el token:
+  - `Error: No se ha detectado un API Key (PAT de GitHub con admin:public_key o API Key de Azure OpenAI).`
+- Si falta el mensaje:
+  - `Error: No se ha detectado un mensaje para procesar.`
+- Si falta el endpoint en Azure:
+  - `Error: No se ha detectado un endpoint para procesar.`
+- Si el token es inválido:
+  - `Error: No es posible consumir los servicios con el KEY suministrado.`.
 
 ## Recurso útil
 - [GitHub Models Marketplace](https://github.com/marketplace/models) para la generación y gestión del API KEY.
+- [SDK Azure AI Inference](https://www.npmjs.com/package/@azure-rest/ai-inference)

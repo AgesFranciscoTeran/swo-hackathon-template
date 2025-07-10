@@ -29,16 +29,16 @@ challenge_1/
 
 1. El programa debe solicitar la longitud de la contraseña como argumento desde la línea de comandos.
 2. Si no se proporciona la longitud o no es un número entero, debe mostrar el mensaje:
-   - `Error: Se debe enviar el campo longitud y este debe ser de tipo entero`
+   - `error: se debe enviar el campo longitud y este debe ser de tipo entero`
 3. Si la longitud es menor a 8, debe mostrar el mensaje:
-   - `Error: La longitud mínima para generar la contraseña debe ser de 8`
+   - `error: la longitud minima para generar la contrasena debe ser de 8`
 4. La contraseña generada debe contener al menos:
    - Una letra mayúscula (A-Z)
    - Una letra minúscula (a-z)
    - Un dígito (0-9)
    - Un carácter especial de la lista: `!@#$%^&*`
 5. El programa debe imprimir la contraseña generada con el mensaje:
-   - `La contraseña generada es: <CONTRASEÑA GENERADA>`
+   - `la contrasena generada es: <CONTRASEÑA GENERADA>`
 6. Si ocurre cualquier otro error, debe mostrar un mensaje con el formato:
    - `Error: Detalle del error`
 7. El código debe estar en un archivo llamado `password_generator.py` en la raíz de la carpeta `challenge_1`.
