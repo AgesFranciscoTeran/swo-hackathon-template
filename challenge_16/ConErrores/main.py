@@ -5,7 +5,7 @@ def parse_fecha(texto_fecha):
     try:
         return dt.datetime.strptime(texto_fecha.strip(), "%Y-%m-%d").date()
     except Exception as err:
-        raise ValueError(f"Formato de fecha inválido: {texto_fecha}")
+        raise ValueError(f"Formato de fecha invalido: {texto_fecha}")
 
 def total_calc(monto_base, pagos, fecha_inicio, tasa_anual):
     dias_transcurridos = (dt.date.today() - fecha_inicio).days
@@ -38,9 +38,9 @@ def r1(c, s, b, f, t):
             "Cliente": c,
             "Estado": estado,
             "Pagado": round(pagado, 2),
-            "Interés": interes_calc,
+            "Interes": interes_calc,
             "Deuda Total": round(float(b) + interes_calc, 2),
-            "Días": dias
+            "Dias": dias
         }
 
     except Exception as e:
@@ -69,11 +69,11 @@ def xdata(lista_clientes):
     return resultado
 
 def mostrar_tabla(filas):
-    print(f"{'Cliente':<15} | {'Estado':<10} | {'Pagado':<8} | {'Interés':<9} | {'Deuda Total':<12} | {'Días':<5}")
+    print(f"{'Cliente':<15} | {'Estado':<10} | {'Pagado':<8} | {'Interes':<9} | {'Deuda Total':<12} | {'Dias':<5}")
     print("-" * 70)
     for fila in filas:
         if fila["Estado"] != "ERROR":
-            print(f"{fila['Cliente']:<15} | {fila['Estado']:<10} | {fila['Pagado']:<8.2f} | {fila['Interés']:<9.2f} | {fila['Deuda Total']:<12.2f} | {fila['Días']:<5}")
+            print(f"{fila['Cliente']:<15} | {fila['Estado']:<10} | {fila['Pagado']:<8.2f} | {fila['Interes']:<9.2f} | {fila['Deuda Total']:<12.2f} | {fila['Dias']:<5}")
         else:
             print(f"{fila['Cliente']:<15} | ERROR      | Motivo: {fila.get('Motivo', 'Desconocido')}")
 
