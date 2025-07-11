@@ -17,7 +17,7 @@ Una empresa del sector bancario ha implementado una solución para validar y cal
 - Se debe garantizar que al ejecutar las pruebas genere el reporte de cobertura correspondiente.
 - El código fuente debe ejecutarse sin errores y cumplir todos los criterios funcionales y técnicos.
 - No modifiques los archivos de lógica principal salvo para corregir errores o mejorar validaciones.
-- se debe generar el reporte de cobertura de pruebas unitarias
+- se debe generar el reporte de cobertura de pruebas unitarias (Jest Coverage)
 
 ### Ejemplo de ejecución
 En la terminal, dentro de la carpeta del proyecto, ejecuta:
