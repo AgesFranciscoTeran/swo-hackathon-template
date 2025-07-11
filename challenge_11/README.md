@@ -27,15 +27,11 @@ challenge_11/
 │           ├── ConsoleApp1.exe
 │           └── movimientos.json
 ├── modernizado/                 # Tu implementación .NET 8 (a crear)
-├── src/
-│   ├── main/java/com/swo/validador/ValidadorFecha.java   # Archivo entregado, no modificar
-│   └── test/java/com/swo/validador/                     # Aqui debes crear tu archivo de pruebas
-├── pom.xml
 ├── README.md                    # Este archivo
 └── ...
+
 ```
 
-> **Nota:** El archivo `ValidadorFechaTest.java` no esta incluido por defecto. Debes crearlo tu mismo en la ruta indicada (`src/test/java/com/swo/validador/ValidadorFechaTest.java`) para implementar las pruebas unitarias solicitadas.
 
 ## Criterios de Aceptación Funcionales
 
@@ -45,7 +41,7 @@ challenge_11/
 
 - El resultado debe imprimirse en consola con detalle de cada movimiento y saldo acumulado.
 
-- Se debe permitir cambiar el formato de salida implementando el patrón Strategy (por ejemplo: salida como texto plano o JSON).
+
 
 ### Criterios de Aceptación Técnicos
 - El proyecto modernizado debe usar .NET 8.

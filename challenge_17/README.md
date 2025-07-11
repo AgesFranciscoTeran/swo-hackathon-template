@@ -1,54 +1,74 @@
-# Reto 18: Pruebas ligeras de carga  
-  
-## Descripción  
-  
-En este reto utilizarás la herramienta K6 para crear un script de prueba de carga simple. Tu script debe simular usuarios concurrentes navegando e interactuando con una página web de prueba específica. El objetivo es generar este script, con ayuda de un asistente de código basado en IA, cumpliendo los requisitos técnicos que se especifican a continuación. El script enviado será revisado únicamente a nivel de código (no se ejecutará en esta etapa), por lo que la validez y estructura serán claves.
-  
-  
-## Prerrequisitos  
-  
-- **Sistema operativo:** Windows.  
-- Instalación previa de [Node.js](https://nodejs.org/) y [K6](https://k6.io/docs/get-started/installation/).  
-- Un editor de código de tu preferencia.  
-- Acceso a un asistente de código (por ejemplo, Copilot, ChatGPT, Gemini, etc.).  
+# Reto 17: Resolver Preguntas Código
+
+## Descripción
+
+El objetivo de este ejercicio es analizar el aplicativo open source disponible en [https://github.com/dotnet/eShop](https://github.com/dotnet/eShop) y responder a una serie de preguntas técnicas sobre su arquitectura, patrones y funcionamiento. Las preguntas están definidas a continuación y cubren temas como microservicios, comunicación, autenticación, testing, CI/CD, entre otros.
+
+## Prerrequisitos
+- Sistema operativo: Windows, macOS o Linux.
 
 ## Estructura del proyecto
 ```
-swo-hackaton-challenge-18/
-├── test.js
-├── README.md
-```  
-  
-## Criterios de aceptación  
-  
-- El script debe estar escrito en JavaScript y preparado para ejecutarse con K6.  
-- Debe apuntar exclusivamente a la siguiente URL de prueba: `https://test-api.k6.io`.  
-- Incluir al menos:  
-    - Una solicitud GET a la URL principal (`/`).  
-    - Una solicitud POST al endpoint `/user/register` con un cuerpo de ejemplo para registrar un usuario falso.  
-- El script debe estar configurado para simular 500 usuarios concurrentes (500 VUs).  
-- La configuración de K6 (`export let options = {...}`) debe estar correctamente definida.  
-- El script debe ser sintácticamente correcto y válido para K6.  
-- Comentarios claros que expliquen cada sección del script.  
-- No incluir credenciales reales ni información personal sensible.  
-- No se evaluará el resultado de la ejecución, solo la validez del código.  
-  
-## Instrucciones de implementacion del proyecto 
-1. Si ya tienes el repositorio base, omite los pasos 1 a 3. Si no, clona el repositorio:
-https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+swo-hackaton-challenge-17/
+├── eShop/                # Carpeta donde se debe clonar el repositorio eShop
+│   ├── src/
+│   ├── tests/
+│   └── ...
+├── respuestas.txt        # Archivo con las respuestas a las preguntas
+└── README.md             # Instrucciones y guía del reto
+```
 
-2. Clona el repositorio asignado para tu equipo.
+## Criterios de aceptación
 
-3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asignado a tu equipo.
+- Analizar el repositorio eShop y responder cada pregunta de forma clara y concisa.
+- Las respuestas deben entregarse en un archivo de texto plano (por ejemplo, `respuestas.txt`).
 
-4. Implementa la solución siguiendo la estructura y requisitos descritos arriba.
+### Preguntas
 
-5. Sube los archivos de validación y la estructura del proyecto al repositorio de tu equipo.
+1. ¿Cómo está estructurada la arquitectura de microservicios en eShop? - Explorar los servicios Catalog.API, Ordering.API, Basket.API y sus responsabilidades.
+2. ¿Qué es .NET Aspire y cómo se utiliza en el proyecto? - Examinar eShop.AppHost/Program.cs para entender la orquestación de servicios.
+3. ¿Cómo funciona la comunicación entre microservicios? - Analizar el uso de RabbitMQ y los integration events en IntegrationEventLogService.
+4. ¿Qué patrones de diseño se implementan en la API de Ordering? - Revisar ValidatorBehavior y el patrón Mediator.
+5. ¿Cómo se maneja la persistencia de datos en diferentes servicios? - Explorar Entity Framework en OrderQueries y las diferentes bases de datos.
+6. ¿Cómo funciona la búsqueda semántica en el catálogo? - Examinar CatalogAI y GetItemsBySemanticRelevance.
+7. ¿Qué estrategia de versionado de APIs se utiliza? - Analizar los endpoints v1 y v2 en CatalogApi.
+8. ¿Cómo se implementa la autenticación y autorización? - Revisar Identity.API y los decoradores [Authorize].
+9. ¿Cómo funciona el chatbot con IA? - Explorar Chatbot.razor y ChatState.
+10. ¿Qué tecnologías se usan para el frontend? - Analizar Blazor en WebApp y HybridApp para MAUI.
+11. ¿Cómo se configura el CI/CD del proyecto? - Examinar ci.yml y los scripts de build.
+12. ¿Cómo se maneja la containerización? - Revisar los Dockerfiles y la configuración de contenedores en eShop.AppHost.
+13. ¿Qué estrategia de testing se implementa? - Analizar CatalogApiTests y los tests funcionales.
+14. ¿Cómo se configura el monitoreo y observabilidad? - Explorar la integración con OpenTelemetry y logging.
+15. ¿Cómo se integra OpenAI en el proyecto? - Revisar AddOpenAI y la configuración de IA.
+16. ¿Cómo se manejan las migraciones de base de datos? - Examinar MigrateDbContextExtensions.
+17. ¿Qué estrategia se usa para el manejo de errores y validación? - Analizar LinqSelectExtensions y los behaviors de validación.
+18. ¿Cómo funciona el sistema de webhooks? - Explorar WebHooksApi y WebhookClient.
+19. ¿Cómo se implementa la funcionalidad de carrito de compras? - Revisar la integración entre servicios y el manejo de estado.
+20. ¿Cómo se maneja la búsqueda y filtrado de productos? - Analizar CatalogSearch.razor y los endpoints de filtrado en CatalogApi.
 
-## Recursos útiles
+### Ejemplo de formato de respuesta
 
-- [Documentación oficial K6](https://grafana.com/docs/k6/latest/)  
-  Referencia oficial del producto K6
+El archivo de respuestas debe tener el siguiente formato:
 
-- [Get started with k6](https://grafana.com/docs/k6/latest/examples/get-started-with-k6/)  
-  Quick start de ejemplo de K6.  
+```
+1. [PREGUNTA] - [RESPUESTA GENERADA POR EL PARTICIPANTE]
+2. [PREGUNTA] - [RESPUESTA GENERADA POR EL PARTICIPANTE]
+...
+```
+
+## Instrucciones de implementación del ejercicio
+
+- Clona el repositorio eShop en tu entorno local.
+- Analiza el código y responde cada pregunta en el archivo de texto.
+- Entrega el archivo `respuestas.txt` junto con tu solución.
+
+## Observaciones
+
+- Se recomienda justificar brevemente cada respuesta con referencias a archivos o fragmentos de código cuando sea posible.
+
+## Recursos Útiles
+
+- [Repositorio eShop en GitHub](https://github.com/dotnet/eShop)
+- [Documentación oficial de eShop](https://github.com/dotnet/eShop/tree/main/docs)
+- [Guía de patrones de arquitectura de microservicios](https://docs.microsoft.com/en-us/azure/architecture/microservices/)
+- [Documentación de .NET Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/)

@@ -52,10 +52,11 @@ Puedes documentar cualquier ambigüedad o detalle relevante encontrado en el mod
 
 ## Recursos Útiles
 
-Optimización de consultas SQL en SQL Server
+- [**dbdiagram.io**](https://dbdiagram.io/)  
+  Herramienta gratuita online para visualizar, crear y compartir modelos relacionales de bases de datos a partir de scripts SQL o DBML.
 
-dbdiagram.io para visualizar modelos relacionales
+- [**Use the Index, Luke!**](https://use-the-index-luke.com/)  
+  Referencia esencial para aprender sobre optimización de consultas SQL e índices en bases de datos relacionales. Contiene guías prácticas y ejemplos orientados a SQL Server, PostgreSQL, Oracle, MySQL, y más.
 
-Use the Index, Luke!
-
-DB Fiddle para SQL Server online
+- [**DB Fiddle (SQL Server)**](https://dbfiddle.uk/?db=sqlserver_2019)  
+  Entorno online para escribir, ejecutar y compartir scripts SQL de SQL Server, ideal para pruebas rápidas y demostraciones sin necesidad de instalación.

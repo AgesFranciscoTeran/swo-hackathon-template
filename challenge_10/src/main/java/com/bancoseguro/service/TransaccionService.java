@@ -41,15 +41,15 @@ public class TransaccionService {
         }
         // Validar por país riesgoso
         if (reglaPaisRiesgoso.esSospechosa(t)) {
-            return "Sospechosa por país";
+            return "Sospechosa por pais";
         }
         // Validar por frecuencia alta para ese cliente
         List<Transaccion> historialCliente = obtenerTransaccionesPorCliente(t.getClienteId());
         if (reglaFrecuenciaAlta.esSospechosa(t, historialCliente)) {
-            return "Requiere revisión manual por frecuencia";
+            return "Requiere revision manual por frecuencia";
         }
 
-        return "Transacción válida";
+        return "Transaccion valida";
     }
 
     /**
