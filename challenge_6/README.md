@@ -13,7 +13,7 @@ Recibirás una función en Java que valida fechas ingresadas como texto, admitie
 ```
 challenge-6/
 ├── src/
-│   ├── main/java/com/swo/validador/ValidadorFecha.java   # Archivo entregado, no modificar
+│   ├── main/java/com/swo/validador/ValidadorFecha.java   # Archivo entregado, no mo
 │   └── test/java/com/swo/validador/                     # Aquí debes crear tu archivo de pruebas
 ├── pom.xml
 ├── README.md

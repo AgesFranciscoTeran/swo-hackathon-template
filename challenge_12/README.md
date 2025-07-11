@@ -53,8 +53,6 @@ swo-hackaton-challenge-12/
 - No debe haber secretos hardcodeados en los archivos.
 - El proyecto debe tener un **README.md** y un diagrama de arquitectura en `/docs/`.
 
-### Ejemplo de ejecución
-
 
 ## Instrucciones de implementación del ejercicio
 
@@ -63,7 +61,7 @@ swo-hackaton-challenge-12/
 2. Clona el repositorio asignado para tu equipo.
 3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
 
-## Ejemplo de validación
+## Ejemplo de validacion
 
 ```bash
 # Inicializa el entorno de Terraform
@@ -80,9 +78,9 @@ tflint
 
 ```
 
-## Instrucciones de implementación del proyecto 
+## Instrucciones de implementacion del proyecto 
 1. Si ya tienes el repositorio base, omite los pasos 1 a 3. Si no, clona el repositorio:
-   https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
+https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
 
 2. Clona el repositorio asignado para tu equipo.
 

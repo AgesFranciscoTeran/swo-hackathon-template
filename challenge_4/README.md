@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/07e5aee1-4de9-4482-8c2a-74bea8aa2125)
+
 # Reto 4: Procesar texto en JSON
 
 ## Descripcion
@@ -24,7 +24,7 @@ challenge_4/
 ## Criterios de aceptacion
 
 1. El programa debe leer el archivo empleados.json ubicado en la raiz del proyecto.
-2. El archivo principal debe llamarse `Index.js` y estar en la raiz de la carpeta.
+2. El archivo principal debe llamarse `index.js` y estar en la raiz de la carpeta.
 3. Si el archivo no existe, debe mostrar exactamente:
    - `No se encontro el archivo empleados.json`
 4. Si el archivo existe pero el contenido no es un JSON valido, debe mostrar exactamente:

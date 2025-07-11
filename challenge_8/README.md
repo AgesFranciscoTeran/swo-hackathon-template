@@ -28,6 +28,7 @@ swo-hackaton-challenge-8/
 - El código de evaluación de riesgo debe estar en `EvaluadorRiesgoCredito.java`.
 - El código debe ser más legible, fácil de mantener y sin condicionales anidados innecesarios.
 - El programa debe seguir funcionando correctamente y producir los mismos resultados que la versión original.
+- se debe contar con clean code en programa
 - **Debes optimizar las consultas en `EvaluadorRiesgoCredito.java` utilizando los métodos ya disponibles en `ReglasNegocio.java`.**
 
 ### Casos de prueba sugeridos
@@ -45,9 +46,9 @@ swo-hackaton-challenge-8/
 ### Criterios de aceptación técnicos
 - El código debe compilar sin errores.
 - La lógica debe utilizar eficientemente los métodos ya implementados en `ReglasNegocio.java`.
-- Se deben mantener las impresiones en consola como está actualmente.
+- Se deben matener las impresiones en consola como está actualmente.
 - La lógica debe estar correctamente separada entre las dos clases.
-- El código de todas las clases Java debe cumplir con las mejores prácticas definidas en el estándar de código limpio.
+- El código de todas las clases java debe cumplir con las mejores prácticas definidas en el estándar de código limpio.
 
 ### Ejemplo de ejecución
 Compila y ejecuta el programa desde la carpeta `src/main/java/`:
@@ -63,7 +64,7 @@ La salida debe mostrar los resultados de la evaluación de riesgo para los casos
 1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
 2. Clona el repositorio asignado para tu equipo.
-3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asignado a tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
 4. En la carpeta correspondiente al reto, verifica que tienes los archivos `EvaluadorRiesgoCredito.java` y `ReglasNegocio.java` en:
    ```
    src/main/java/
@@ -71,7 +72,7 @@ La salida debe mostrar los resultados de la evaluación de riesgo para los casos
 5. Refactoriza el código en `EvaluadorRiesgoCredito.java`, optimizando las consultas y utilizando los métodos ya disponibles en `ReglasNegocio.java`.
 6. Asegúrate de que el código compile y funcione correctamente.
 7. Realiza commit y push de tus cambios.
-8. Finalmente, en el aplicativo de hackathon, envía el ejercicio correspondiente a challenge 8 para su revisión.
+8. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 8 para su revisión.
 
 ## Observaciones
 - No modifiques la funcionalidad original, solo simplifica la lógica.

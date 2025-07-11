@@ -8,7 +8,7 @@ Sin embargo, esta API no cuenta con documentación técnica ni funcional. Por lo
 No es necesario implementar ni compilar la lógica en Java: solo debes entregar el archivo `openapi.yaml` correctamente documentado y validado.
 
 ## Prerrequisitos
-- Java 21 instalado y configurado en el PATH.
+- Java 21 instalado y configurado en el PATH .
 
 - Apache Maven o Gradle (recomendado para build y dependencias).
 
@@ -18,7 +18,7 @@ No es necesario implementar ni compilar la lógica en Java: solo debes entregar 
 
 ## Estructura del proyecto
 ```
-challenge-15/
+swo-hackaton-challenge-15/
 ├── src/
 │   └── main/
 │       └── java/
@@ -45,12 +45,45 @@ challenge-15/
 
 ```
 
-## Criterios de aceptación
+## Criterios de aceptación funcionales
 
-### Funcionales
-- El archivo `openapi.yaml` debe documentar exhaustivamente todos los endpoints disponibles en la API entregada,incluyendo:
+- El archivo openapi.yaml debe documentar exhaustivamente todos los endpoints disponibles en la API entregada.
 
-  - Debe documentar exhaustivamente todos los endpoints definidos en la API propuesta, incluyendo:
+- Cada endpoint debe incluir el método HTTP, la ruta, descripción, parámetros de entrada y posibles códigos de respuesta.
+
+- Los parámetros de filtros y paginación deben estar definidos y descritos claramente en cada endpoint correspondiente.
+
+- Los modelos de datos (request y response), incluyendo los objetos anidados, deben estar completamente especificados con sus atributos, tipos y restricciones.
+
+- Las validaciones presentes en la API (como restricciones de longitud, valores numéricos mínimos, campos obligatorios, etc.) deben reflejarse en la especificación.
+
+- La documentación debe incluir al menos un ejemplo de solicitud y uno de respuesta para cada endpoint principal.
+
+- El archivo openapi.yaml debe poder abrirse sin errores en Swagger UI o Swagger Editor.
+
+- El participante solo debe entregar el archivo openapi.yaml, ubicado en la raíz del proyecto.
+
+### Criterios de aceptación técnicos
+
+- El archivo openapi.yaml debe estar en formato OpenAPI 3.x y contener sintaxis YAML válida.
+
+- La especificación debe cubrir la totalidad de la API provista, sin omitir endpoints, parámetros o modelos utilizados por el sistema.
+
+- Todos los modelos, parámetros y respuestas deben coincidir con los definidos en el código de la API entregada.
+
+- El archivo debe poder abrirse sin errores en Swagger Editor o Swagger UI.
+
+- El archivo openapi.yaml debe estar ubicado en la raíz del proyecto y ser el único entregable requerido por el participante.
+
+- Deben incluirse ejemplos de request y response válidos en al menos dos endpoints de la especificación.
+
+- Los parámetros y modelos deben incluir, cuando corresponda, las restricciones y validaciones implementadas en el código (ej: campos requeridos, valores mínimos/máximos).
+
+## Criterios de validación
+
+- El archivo `openapi.yaml` debe estar presente en la raíz del proyecto y ser el único entregable requerido.
+- La especificación debe estar en formato OpenAPI 3.0 y contener sintaxis YAML válida.
+- Debe documentar exhaustivamente todos los endpoints definidos en la API propuesta, incluyendo:
   - Método HTTP y ruta de cada endpoint.
   - Descripción clara de la operación.
   - Parámetros de entrada (query, path, body) con tipos, restricciones y ejemplos.
@@ -59,21 +92,8 @@ challenge-15/
   - Ejemplos válidos de request y response para al menos dos endpoints principales.
   - Parámetros de filtros y paginación definidos y descritos en los endpoints correspondientes.
   - Restricciones y validaciones reflejadas en la especificación (campos requeridos, valores mínimos/máximos, longitudes, etc.).
-
-- Cada endpoint debe incluir el método HTTP, la ruta, descripción, parámetros de entrada y posibles códigos de respuesta.
-- Los parámetros de filtros y paginación deben estar definidos y descritos claramente en cada endpoint correspondiente.
-- Los modelos de datos (request y response), incluyendo los objetos anidados, deben estar completamente especificados con sus atributos, tipos y restricciones.
-- Las validaciones presentes en la API (como restricciones de longitud, valores numéricos mínimos, campos obligatorios, etc.) deben reflejarse en la especificación.
-- La documentación debe incluir al menos un ejemplo de solicitud y uno de respuesta para cada endpoint principal.
-
-### Técnicos
-- El archivo `openapi.yaml` debe estar en formato OpenAPI 3.0 y contener sintaxis YAML válida.
-- La especificación debe cubrir la totalidad de la API provista, sin omitir endpoints, parámetros o modelos utilizados por el sistema.
-- Todos los modelos, parámetros y respuestas deben coincidir con los definidos en el código de la API entregada.
-- El archivo debe poder abrirse sin errores en Swagger Editor o Swagger UI.
-- El archivo `openapi.yaml` debe estar ubicado en la raíz del proyecto y ser el único entregable requerido por el participante.
-- Deben incluirse ejemplos de request y response válidos en al menos dos endpoints de la especificación.
-- Los parámetros y modelos deben incluir, cuando corresponda, las restricciones y validaciones implementadas en el código (ej: campos requeridos, valores mínimos/máximos).
+- El archivo debe poder abrirse y validarse sin errores en Swagger Editor o Swagger UI.
+- No es necesario implementar ni compilar la lógica en Java, solo entregar la documentación OpenAPI.
 
 ## Instrucciones de implementación del ejercicio
 1. Si ya tienes el repositorio base, omite los pasos 1 a 3. Si no, clona el repositorio:

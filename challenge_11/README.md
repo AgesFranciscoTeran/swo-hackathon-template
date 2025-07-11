@@ -2,7 +2,7 @@
 
 ## Descripción
 
-En este reto trabajarás con una aplicación de consola desarrollada en C# sobre .NET Framework. Esta aplicación simula la generación de un extracto bancario mensual para un cliente, a partir de un archivo JSON con movimientos. La lógica actual está acoplada, carece de separación de responsabilidades, y utiliza patrones obsoletos. El objetivo es que debes modernizar este programa a .NET 8 manteniendo el output generado por .NET Framework haciendo uso del JSON entregado.
+En este reto trabajarás con una aplicación de consola desarrollada en C# sobre .NET Framework. Esta aplicación simula la generación de un extracto bancario mensual para un cliente, a partir de un archivo JSON con movimientos. La lógica actual está acoplada, carece de separación de responsabilidades, y utiliza patrones obsoletos, el objetivo es que debes modernizar este programa a .net framework manteniendo el output generado por .NET Framework haciendo uso del json entregado.
 
 
 
@@ -27,8 +27,15 @@ challenge_11/
 │           ├── ConsoleApp1.exe
 │           └── movimientos.json
 ├── modernizado/                 # Tu implementación .NET 8 (a crear)
-└── README.md                    # Este archivo
+├── src/
+│   ├── main/java/com/swo/validador/ValidadorFecha.java   # Archivo entregado, no modificar
+│   └── test/java/com/swo/validador/                     # Aqui debes crear tu archivo de pruebas
+├── pom.xml
+├── README.md                    # Este archivo
+└── ...
 ```
+
+> **Nota:** El archivo `ValidadorFechaTest.java` no esta incluido por defecto. Debes crearlo tu mismo en la ruta indicada (`src/test/java/com/swo/validador/ValidadorFechaTest.java`) para implementar las pruebas unitarias solicitadas.
 
 ## Criterios de Aceptación Funcionales
 
@@ -47,9 +54,11 @@ challenge_11/
 
 - La lectura del archivo debe recibirse como argumento por línea de comandos.
 
-- La estructura del proyecto debe estar en la carpeta challenge_11/modernizado.
+- La estructura del proyecto debe estar en la carpeta challenge_11/Modernizado.
 
 - Se deben aplicar buenas prácticas de arquitectura (separación de responsabilidades, inyección de dependencias si aplica).
+
+- **El formato numérico de los montos y saldos debe ser en inglés (en-US): punto como separador decimal y coma como separador de miles, por ejemplo: $ 3,449.75**
 
 
 ## Ejecución del Proyecto Versión Original (.NET Framework)
@@ -71,15 +80,15 @@ ConsoleApp1.exe movimientos.json 1000
 ## Instrucciones de Implementación
 1. Clona el repositorio base del reto:
    ```
-   git clone https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template
-   cd swo-hackathon/challenge_11
+   git clone <URL_DEL_REPOSITORIO>
+   cd swo-hackaton-challenge_11
    ```
-2. Valida que el programa esté funcionando:
+2. Valida que el programa este funcionando:
    ejecuta el programa como se menciona anteriormente
 
-3. Moderniza el ejercicio de extracto bancario a .NET 8
+3. moderniza el ejercicio de extracto bancario a .Net core
   
-4. Prueba la ejecución de tu programa modernizado
+4. prueba la ejecucion de tu programa modernizado
 ```bash
 # Navegar a tu proyecto modernizado
 cd challenge_11/modernizado
@@ -123,3 +132,8 @@ Saldo anterior: $ 1000.00
 ... (más movimientos)
 Saldo final: $ XXXX.XX
 ```
+
+
+
+
+

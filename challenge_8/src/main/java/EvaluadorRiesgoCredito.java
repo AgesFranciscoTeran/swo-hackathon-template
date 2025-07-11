@@ -63,7 +63,7 @@ public class EvaluadorRiesgoCredito {
             );
             System.out.println("Resultado: " + resultado);
         } catch (Exception e) {
-            System.out.println("Error en los parámetros: " + e.getMessage());
+            System.out.println("Error en los parametros: " + e.getMessage());
         }
     }
 }

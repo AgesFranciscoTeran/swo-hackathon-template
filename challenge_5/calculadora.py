@@ -1,45 +1,57 @@
-import math
+#!/usr/bin/env python3
+"""
+Generador de Contraseñas Seguras - Challenge 1
 
-def sumar(a, b):
-    """Suma dos números y retorna el resultado."""
-    return a + b
+Este programa genera contraseñas seguras cumpliendo:
+- Al menos una letra mayúscula (A-Z)
+- Al menos una letra minúscula (a-z)
+- Al menos un dígito (0-9)
+- Al menos un carácter especial (!@#$%^&*)
+- Longitud mínima de 8 caracteres
+"""
 
-def restar(a, b):
-    """Resta el segundo número al primero y retorna el resultado."""
-    return a - b
+import sys
+import random
+import string
 
-def multiplicar(a, b):
-    """Multiplica dos números y retorna el resultado."""
-    return a * b
+def generar_contraseña(longitud):
+    mayusculas = string.ascii_uppercase
+    minusculas = string.ascii_lowercase
+    digitos = string.digits
+    especiales = "!@#$%^&*"
 
-def dividir(a, b):
-    """Divide el primer número entre el segundo y retorna el resultado.
-    Lanza ValueError si el divisor es cero."""
-    if b == 0:
-        raise ValueError("No se puede dividir por cero")
-    return a / b
+    # Garantizar al menos un carácter de cada tipo
+    contraseña = [
+        random.choice(mayusculas),
+        random.choice(minusculas),
+        random.choice(digitos),
+        random.choice(especiales)
+    ]
+    # Completar el resto de la contraseña
+    todos = mayusculas + minusculas + digitos + especiales
+    for _ in range(longitud - 4):
+        contraseña.append(random.choice(todos))
+    random.shuffle(contraseña)
+    return ''.join(contraseña)
 
-def potencia(base, exponente):
-    """Calcula la potencia de una base elevada a un exponente y retorna el resultado."""
-    return base ** exponente
+def main():
+    try:
+        if len(sys.argv) != 2:
+            print("error: se debe enviar el campo longitud y este debe ser de tipo entero")
+            sys.exit(1)
+        try:
+            longitud = int(sys.argv[1])
+        except ValueError:
+            print("error: se debe enviar el campo longitud y este debe ser de tipo entero")
+            sys.exit(1)
+        if longitud < 8:
+            print("error: la longitud minima para generar la contrasena debe ser de 8")
+            sys.exit(1)
+        contraseña = generar_contraseña(longitud)
+        print(f"la contrasena generada es: {contraseña}")
+    except Exception as e:
+        print(f"error: {e}")
+        sys.exit(1)
 
-def raiz_cuadrada(x):
-    """Calcula la raíz cuadrada de un número.
-    Lanza ValueError si el número es negativo."""
-    if x < 0:
-        raise ValueError("No se puede calcular la raíz cuadrada de un número negativo")
-    return math.sqrt(x)
-
-def modulo(a, b):
-    """Calcula el módulo (residuo) de la división entre dos números.
-    Lanza ValueError si el divisor es cero."""
-    if b == 0:
-        raise ValueError("No se puede hacer módulo por cero")
-    return a % b
-
-def promedio(lista):
-    """Calcula el promedio de una lista de números.
-    Lanza ValueError si la lista está vacía."""
-    if not lista:
-        raise ValueError("La lista no puede estar vacía")
-    return sum(lista) / len(lista)
+if __name__ == "__main__":
+    main()

@@ -17,6 +17,7 @@ Una empresa del sector bancario ha implementado una solución para validar y cal
 - Se debe garantizar que al ejecutar las pruebas genere el reporte de cobertura correspondiente.
 - El código fuente debe ejecutarse sin errores y cumplir todos los criterios funcionales y técnicos.
 - No modifiques los archivos de lógica principal salvo para corregir errores o mejorar validaciones.
+- se debe generar el reporte de cobertura de pruebas unitarias
 
 ### Ejemplo de ejecución
 En la terminal, dentro de la carpeta del proyecto, ejecuta:
@@ -29,7 +30,7 @@ La salida debe mostrar que todas las pruebas pasan correctamente o indicar los e
 1. Omite los pasos 1 a 3 si ya los ejecutaste. De lo contrario, clona el repositorio:
    https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template.git
 2. Clona el repositorio asignado para tu equipo.
-3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asignado a tu equipo.
+3. Copia y pega el contenido del repositorio https://github.com/SoftwareOne-Hackaton-Demo/swo-hackathon-template al repositorio asigando a tu equipo.
 4. En la carpeta correspondiente al reto, verifica que tienes el archivo `calculoInteresService.js` en:
    ```
    services/calculoInteresService.js
@@ -42,7 +43,7 @@ La salida debe mostrar que todas las pruebas pasan correctamente o indicar los e
 7. Implementa las pruebas unitarias garantizando un buen porcentaje de cobertura.
 8. Ejecuta las pruebas localmente para validar que todo funcione.
 9. Realiza commit y push de tus cambios.
-10. Finalmente, en el aplicativo de hackathon, envía el ejercicio correspondiente a challenge 7 para su revisión.
+10. Finalmente, en el aplicativo de hackaton, envía el ejercicio correspondiente a challenge 7 para su revisión.
 
 ## Observaciones
 - El archivo `calculoInteresService.test.js` debe ser creado o completado por el usuario y contener todas las pruebas unitarias solicitadas.

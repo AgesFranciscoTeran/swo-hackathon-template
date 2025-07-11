@@ -29,7 +29,6 @@ java -cp target/classes com.bancoseguro.Main <id> <clienteId> <monto> <pais> <ti
 
 ### Casos de Prueba Válidos
 
-```bash
 # Transacción con monto elevado
 java -cp target/classes com.bancoseguro.Main 1 123 15000 Pacificolandia 1751849926647
 node src/main.js 1 123 15000 Pacificolandia 1751849926647
@@ -41,7 +40,7 @@ node src/main.js 2 456 500 Obscuristan 1751849926647
 # Transacción válida
 java -cp target/classes com.bancoseguro.Main 3 789 100 Verdelandia 1751849926647
 node src/main.js 3 789 100 Verdelandia 1751849926647
-```
+
 
 ### Manejo de Errores
 ```bash
@@ -100,15 +99,14 @@ node src/main.js 1 123 15000 "  " 1751849926647
 - **Seguros**: Pacificolandia, Verdelandia
 
 ## Instrucciones de Implementación
-
-1. Analiza el código Java en `challenge_10` (este código ya está implementado y sirve como referencia)
+1. Analiza el código Java en challenge_10 (este código ya está implementado y sirve como referencia)
 2. **Implementa únicamente la migración en Node.js** - solo debes entregar el código de Node.js
 3. Mantén exactamente los mismos valores de configuración
 4. Asegúrate de que ambas versiones produzcan resultados idénticos
 5. Valida el manejo de errores en ambas implementaciones
 
-## Importante
 
+## Importante
 - **Mantén** los mismos mensajes de salida y validación
 - **Replica** la estructura de clases y responsabilidades en Node.js
 - **Valida** que ambas versiones manejen errores de forma consistente
